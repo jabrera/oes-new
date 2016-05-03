@@ -1,0 +1,33 @@
+<div class="slider ripple ripple-black">
+    <div class="scrollable">
+        <div class="title table">
+            <div class="row">
+                <div class="cell middle">
+                    <a class="menu-icon noripple"><i class="md-icon">menu</i></a>Main Menu
+                </div>
+            </div>
+        </div>
+        <ul class="nav">
+            <?php
+            use Oslo\HTML as HTML;
+            foreach($slider_menu as $menu) {
+                if(is_array($menu)) {
+                    if(is_array($menu["link"])) {
+                        echo '<li><a><i class="md-icon">'.$menu["icon"].'</i>'.$menu["text"].'</a><ul>';
+                        foreach($menu["link"] as $submenu)
+                            echo '<li><a href="'.$submenu["link"].'">'.$menu["text"].'</a></li>';
+                        echo '</ul></li>';
+                    } else {
+                        echo '<li><a href="'.$menu["link"].'"><i class="md-icon">'.$menu["icon"].'</i>'.$menu["text"].'</a></li>';
+                    }
+                } else {
+                    HTML\Node::create("li.subtitle{".$menu."}");
+                }
+            }
+            ?>
+        </ul>
+        <div class="copy">
+            &copy; <?=date("Y")?> Oslo  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, laborum.
+        </div>
+    </div>
+</div>

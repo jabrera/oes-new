@@ -1,0 +1,661 @@
+//@extend-elements
+//original selectors
+//.view h1, .view h2, .view h3, .view h4, .view h5, .view h6
+$primary: #005cb9;
+
+@mixin box-shadow($value) {
+	-webkit-box-shadow: $value;
+	-moz-box-shadow: $value;
+	-ms-box-shadow: $value;
+	-o-box-shadow: $value;
+	box-shadow: $value;
+}
+@mixin border-radius($value) {
+	-webkit-border-radius: $value;
+	-moz-border-radius: $value;
+	-ms-border-radius: $value;
+	-o-border-radius: $value;
+	border-radius: $value;
+}
+@mixin transition($value) {
+	-webkit-transition: $value;
+	-moz-transition: $value;
+	-ms-transition: $value;
+	-o-transition: $value;
+	transition: $value;
+}
+@mixin transform($value) {
+	-webkit-transform: $value;
+	-moz-transform: $value;
+	-ms-transform: $value;
+	-o-transform: $value;
+	transform: $value;
+}
+
+
+%header {
+	color: $primary;
+	margin: 0;
+	padding: 0 16px 16px;
+}
+
+
+.action-bar {
+	background: $primary;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: white;
+	z-index: 30;
+	@include box-shadow(0px 3px 5px rgba(0,0,0,.2));
+	&.data {
+		background: white;
+		position: fixed;
+		top: -65px;
+		left: 0;
+		width: 100%;
+		z-index: 40;
+		color: #666;
+		ul.nav > li > a:hover > span {
+			background: rgba(0,0,0,.1);
+		}
+		.table .row div:first-child {
+			padding-left: 15px;
+			font-size: 18px;
+		}
+	}
+	.row {
+		height: 60px;
+	}
+	.table {
+		height: 60px;
+		width: 100%;
+	}
+	.cell {
+		position: relative;
+	}
+	.menu-icon {
+		padding: 12px;
+		display: inline-block;
+		vertical-align: middle;
+		&:hover {
+			background: rgba(0,0,0,.1);
+		}
+	}
+	.title {
+		vertical-align: middle;
+		font-size: 16px;
+		font-weight: 400;
+		white-space: nowrap;
+		display: inline-block;
+		min-width: 140px;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		&.pad {
+			padding-left: 15px;
+		}
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		&.nav {
+			float: right;
+			vertical-align: middle;
+			display: table;
+			> li {
+				display: table-cell;
+				vertical-align: middle;
+				position: relative;
+				> a {
+					color: inherit;
+					display: table;
+					height: 100%;
+					> span {
+						display: table-cell;
+						vertical-align: middle;
+						padding: 0 10px;
+						white-space: nowrap;
+					}
+					&:hover > span {
+						background: rgba(0,0,0,.2);
+					}
+				}
+			}
+			ul {
+				position: absolute;
+				z-index: 150;
+				right: 5px;
+				top: 5px;
+				background: white;
+				@include border-radius(2px);
+				@include box-shadow(0 0 5px rgba(0,0,0,.2));
+				min-width: 150px;
+				max-width: 300px;
+				display: none;
+				padding: 7px 0;
+				li {
+					float: left;
+					width: 100%;
+					a {
+						padding: 12px;
+						color: #333;
+						display: block;
+						white-space: nowrap;
+						text-overflow: ellipsis;
+						overflow: hidden;
+					}
+					&:hover a {
+						background: rgba(0,0,0,.05);
+					}
+				}
+			}
+		}
+	}
+	i.md-icon {
+		font-size: 24px;
+	}
+}
+.slider {
+	position: fixed;
+	z-index: 140;
+	top: 0;
+	left: -308px;
+	width: 300px;
+	height: 100%;
+	background: white;
+	color: rgba(0,0,0,.87);
+	@include box-shadow(0 0 8px rgba(0,0,0,.2));
+	.cover {
+		width: 100%;
+		height: 150px;
+		position: relative;
+	}
+	.title {
+		width: 100%;
+		position: relative;
+		color: inherit;
+		height: 60px;
+		font-weight: 700;
+		padding: 0 12px;
+		font-size: 14px;
+		i.md-icon {
+			margin-right: 8px;
+		}
+	}
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+		width: 100%;
+		color: inherit;
+		&.nav {
+			> li {
+				position: relative;
+			}
+			li {
+				&.subtitle {
+					font-size: 15px;
+					padding: 16px;
+					border-top: 1px solid rgba(0,0,0,.1);
+					font-weight: bold;
+					color: rgba(0,0,0,.54);
+				}
+				span[class^=ripple] {
+					display: block;
+				}
+				a {
+					display: block;
+					width: 100%;
+					padding: 16px 12px;
+					color: inherit;
+					font-weight: bold;
+					font-size: 14px;
+				}
+				a[selected] {
+					color: $primary;
+					font-weight: bold;
+				}
+			}
+			ul {
+				background: rgba(0,0,0,.05);
+				max-height: 0;
+				overflow: hidden;
+				@include transition(max-height .5s ease-in-out);
+				a {
+					padding-left: 68px;
+					font-weight: 500;
+				}
+			}
+			i.more-options-icon {
+				position: absolute;
+				top: 15px;
+				right: -24px;
+				opacity: .5;
+				cursor: pointer;
+				@include transform(rotate(0deg));
+				@include transition(all .2s ease-in-out);
+				&.down {
+					@include transform(rotate(90deg));
+				}
+			}
+		}
+		i.md-icon {
+			margin-right: 32px;
+			font-size: 24px;
+			color: rgba(0,0,0,.54);
+		}
+	}
+	.menu-icon {
+		padding-right: 8px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.copy {
+		padding: 20px 15px 50px;
+		font-size: 12px;
+		line-height: 200%;
+		opacity: .5;
+	}
+}
+.view {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	padding-bottom: 24px;
+	> .card {
+		margin: 0px;
+	}
+	h1 {
+		@extend %header;
+	}
+	h2 {
+		@extend %header;
+	}
+	h3 {
+		@extend %header;
+	}
+	h4 {
+		@extend %header;
+	}
+	h5 {
+		@extend %header;
+	}
+	h6 {
+		@extend %header;
+	}
+	.columns {
+		max-width: 1024px;
+		margin: 0 auto;
+		overflow: hidden;
+		&.wide {
+			min-width: 100%;
+			max-width: 100%;
+			width: 100%;
+		}
+		&.pad [class^="col-"] {
+			padding: 0 24px;
+			padding-right: 0;
+			&:last-child {
+				padding-right: 24px;
+			}
+		}
+	}
+	[class^="col-"] {
+		float: left;
+		display: inline-block;
+	}
+}
+.card {
+	background: white;
+	@include border-radius(1px);
+	@include box-shadow(0 2px 4px rgba(0,0,0,.2));
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	margin-top: 24px;
+	padding-top: 24px;
+	&.nopad {
+		padding-top: 0px;
+	}
+	.cover {
+		height: 150px;
+		margin-bottom: 16px;
+	}
+	p {
+		padding: 0 16px 16px;
+		margin: 0;
+	}
+	.buttons {
+		padding: 0 16px 16px;
+	}
+	.data-action-card {
+		background: $primary;
+		display: table;
+		color: white;
+		position: absolute;
+		top: -100px;
+		left: 0px;
+		width: 100%;
+		@include box-shadow(0px 3px 4px rgba(0,0,0,.2));
+		.table {
+			width: 100%;
+		}
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			&.nav {
+				float: right;
+				vertical-align: middle;
+				display: table;
+				> li {
+					display: table-cell;
+					vertical-align: middle;
+					position: relative;
+					> a {
+						color: inherit;
+						display: table;
+						min-width: 48px;
+						> span {
+							display: table-cell;
+							vertical-align: middle;
+							padding: 18px 10px;
+							white-space: nowrap;
+						}
+						&:hover > span {
+							background: rgba(0,0,0,.2);
+						}
+					}
+				}
+				ul {
+					position: absolute;
+					z-index: 150;
+					right: 5px;
+					top: 5px;
+					background: white;
+					@include border-radius(2px);
+					@include box-shadow(0 0 5px rgba(0,0,0,.2));
+					min-width: 150px;
+					max-width: 300px;
+					display: none;
+					padding: 7px 0;
+					li {
+						float: left;
+						width: 100%;
+						a {
+							padding: 12px;
+							color: #333;
+							display: block;
+							white-space: nowrap;
+							text-overflow: ellipsis;
+							overflow: hidden;
+						}
+						&:hover a {
+							background: rgba(0,0,0,.05);
+						}
+					}
+				}
+			}
+		}
+		.table .row div:first-child {
+			padding-left: 24px;
+			font-size: 18px;
+		}
+	}
+}
+.bottom-navigation {
+	background: white;
+	position: fixed;
+	display: none;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 20;
+	@include box-shadow(0 0 8px rgba(0,0,0,.2));
+	ul {
+		margin: 0;
+		padding: 0;
+		background: white;
+		display: table;
+		width: 100%;
+		height: 60px;
+		li {
+			display: table-cell;
+			text-align: center;
+			padding: 8px 0;
+			a {
+				display: inline-block;
+				span {
+					display: block;
+					font-size: 14px;
+				}
+			}
+			a[selected] {
+				color: $primary;
+			}
+		}
+	}
+	&.side {
+		width: 60px !important;
+		span {
+			display: none;
+		}
+		ul li {
+			display: table-row;
+			a {
+				padding: 12px 0;
+			}
+		}
+	}
+}
+.bottom-sheet {
+	bottom: 0;
+	min-width: 300px;
+	max-width: 360px;
+	max-height: 80%;
+	background: white;
+	position: fixed;
+	@include border-radius(2px);
+	z-index: 120;
+	color: rgba(0,0,0,.8);
+	@include box-shadow(0 0 5px rgba(0,0,0,.1));
+	h4 {
+		margin: 0;
+		padding: 16px;
+	}
+	.cover {
+		height: 150px;
+	}
+	.wrapper {
+		padding: 0 16px 16px;
+	}
+}
+.snackbar {
+	min-width: 288px;
+	max-width: 568px;
+	position: fixed;
+	bottom: 0;
+	z-index: 10;
+	background: #323232;
+	color: white;
+	padding: 14px 24px;
+	font-size: 14px;
+	@include border-radius(2px 2px 0 0);
+	display: table-row;
+	@include box-shadow(0 0 8px rgba(0,0,0,.1));
+	&.fit {
+		@include border-radius(0);
+	}
+	> div {
+		display: table-cell;
+		vertical-align: middle;
+		&:nth-child(2) {
+			padding-left: 24px;
+		}
+	}
+	div a {
+		white-space: nowrap;
+	}
+}
+.dialog-box {
+	position: fixed;
+	background: white;
+	@include border-radius(2px);
+	@include box-shadow(0 0 8px rgba(0,0,0,.1));
+	min-width: 280px;
+	max-width: 350px;
+	max-height: 80%;
+	padding-top: 24px;
+	z-index: 130;
+	top: 50%;
+	left: 50%;
+	overflow: hidden;
+	overflow-y: scroll;
+	display: none;
+	&.wide {
+		min-width: 400px;
+		max-width: 600px;
+	}
+	h3 {
+		color: #333;
+		margin: 0;
+		padding: 0 24px 20px;
+	}
+	.content {
+		padding-bottom: 24px;
+		color: #777;
+		&.wrap {
+			padding-left: 24px;
+			padding-right: 24px;
+		}
+		&.scroll {
+			padding-top: 24px;
+			max-height: 150px;
+			border-top: 1px solid rgba(0,0,0,.1);
+			border-bottom: 1px solid rgba(0,0,0,.1);
+		}
+	}
+	.action {
+		padding: 8px;
+		&.fill {
+			padding: 0 0 8px 0;
+		}
+	}
+}
+.black-trans {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,.5);
+	z-index: 100;
+	display: none;
+	cursor: pointer;
+}
+.loading {
+	position: absolute;
+	z-index: 25;
+	top: -100px;
+	width: 52px;
+	height: 52px;
+	@include border-radius(100%);
+	background: white;
+	@include box-shadow(0 3px 4px rgba(0,0,0,.3));
+	opacity: 0;
+	.circular {
+		animation: rotate 2s linear infinite;
+		transform-origin: center center;
+		width: 36px;
+		height: 36px;
+		margin: 8px;
+	}
+	.path {
+		stroke-dasharray: 1,200;
+		stroke-dashoffset: 0;
+		animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+		stroke-linecap: round;
+	}
+}
+@-webkit-keyframes rotate {
+	100% {
+		@include transform(rotate(360deg));
+	}
+}
+@keyframes rotate {
+	100% {
+		@include transform(rotate(360deg));
+	}
+}
+@-webkit-keyframes dash {
+	0% {
+		stroke-dasharray: 1,200;
+		stroke-dashoffset: 0;
+	}
+	50% {
+		stroke-dasharray: 89,200;
+		stroke-dashoffset: -35px;
+	}
+	100% {
+		stroke-dasharray: 89,200;
+		stroke-dashoffset: -124px;
+	}
+}
+@keyframes dash {
+	0% {
+		stroke-dasharray: 1,200;
+		stroke-dashoffset: 0;
+	}
+	50% {
+		stroke-dasharray: 89,200;
+		stroke-dashoffset: -35px;
+	}
+	100% {
+		stroke-dasharray: 89,200;
+		stroke-dashoffset: -124px;
+	}
+}
+@-webkit-keyframes color {
+	100% {
+		stroke: #d62d20;
+	}
+	0% {
+		stroke: #d62d20;
+	}
+	40% {
+		stroke: #0057e7;
+	}
+	66% {
+		stroke: #008744;
+	}
+	80% {
+		stroke: #ffa700;
+	}
+	90% {
+		stroke: #ffa700;
+	}
+}
+@keyframes color {
+	100% {
+		stroke: #d62d20;
+	}
+	0% {
+		stroke: #d62d20;
+	}
+	40% {
+		stroke: #0057e7;
+	}
+	66% {
+		stroke: #008744;
+	}
+	80% {
+		stroke: #ffa700;
+	}
+	90% {
+		stroke: #ffa700;
+	}
+}

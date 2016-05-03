@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><?=$PageTitle?></title>
+    <script type="text/javascript" src="<?=ABSOLUTE_ROOT?>includes/scripts/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+    <link href="<?=ABSOLUTE_ROOT?>includes/styles/global.css" rel="stylesheet">
+    <link href="<?=ABSOLUTE_ROOT?>includes/styles/components.css" rel="stylesheet">
+    <script src="<?=ABSOLUTE_ROOT?>includes/scripts/smooth_scroll.js"></script>
+    <script src="<?=ABSOLUTE_ROOT?>includes/scripts/autosize.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Oslo Framework" />
+    <meta property="og:url" content="http://www.juvarabrera.com" />
+    <meta property="og:site_name" content="Oslo Framework" />
+    <meta property="og:image" content="" />
+    <meta name="twitter:site" content="@juvar_a" />
+    <link rel="shortcut icon" href="<?=ABSOLUTE_ROOT?>favicon.ico">
+    <meta name="theme-color" content="<?=PRIMARY_COLOR?>">
+    <?php
+    loadJavascript("includes/scripts/app/components/");
+    loadJavascript("includes/scripts/app/extensions/");
+    loadJavascript("includes/scripts/app/objects/");
+    loadJavascript("includes/scripts/app/");
+    ?>
+</head>
+<body name="tp">
+<?php
+foreach($this->_cdir as $name => $component) {
+    if($name != "html_end")
+        require_once($component);
+}
+?>
+<div class="view scroll">
+    <?=$__BODY__?>
+</div>
+<div class="data action-bar ripple ripple-black">
+    <div class="table">
+        <div class="row">
+            <div class="cell middle">
+                <span class="data-label"></span>
+            </div>
+            <div class="cell fit">
+                <ul class="nav">
+                    <li><a><span><i class="md-icon">select_all</i></span></a></li>
+                    <li><a><span><i class="md-icon">more_vert</i></span></a>
+                        <ul class="menu">
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<a href="#click"><div class="bottom-sheet scroll"></div></a>
+<div class="dialog-box scroll"></div>
+<div class="black-trans"></div>
+<div class="snackbar row"></div>
+<div class="loading">
+    <svg class="circular" viewBox="25 25 50 50">
+        <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="6" stroke-miterlimit="10"/>
+    </svg>
+</div>
+</body>
+</html>
