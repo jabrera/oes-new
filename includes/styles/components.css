@@ -488,6 +488,65 @@
     .dialog-box .action.fill {
       padding: 0 0 8px 0; }
 
+.chip {
+  background: #e7e7e7;
+  color: rgba(0, 0, 0, 0.54);
+  min-height: 32px;
+  display: inline-table;
+  margin-bottom: 12px;
+  margin-right: 8px;
+  font-size: 12px;
+  padding: 0px 12px;
+  border-radius: 32px; }
+  .chip.hasIcon {
+    padding-left: 0px; }
+  .chip.hasButton {
+    padding-right: 4px; }
+  .chip:hover {
+    background: #767577;
+    color: white; }
+    .chip:hover a i.md-icon {
+      background: white;
+      color: #767577; }
+  .chip span.icon {
+    width: 32px;
+    height: 32px;
+    display: table-cell;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase; }
+  .chip span:not(.icon) {
+    display: table-cell;
+    vertical-align: middle; }
+    .chip span:not(.icon).hasIcon {
+      padding-left: 8px; }
+    .chip span:not(.icon).hasButton {
+      padding-right: 4px; }
+  .chip a {
+    display: table-cell;
+    vertical-align: middle; }
+    .chip a i.md-icon {
+      font-size: 13px !important;
+      background: #9f9e9f;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      -ms-border-radius: 100%;
+      -o-border-radius: 100%;
+      border-radius: 100%;
+      padding: 2px;
+      margin: 4px;
+      color: #e7e7e7; }
+
 .black-trans {
   position: fixed;
   width: 100%;

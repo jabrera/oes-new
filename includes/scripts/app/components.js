@@ -10,7 +10,8 @@ var ActionBar,
     BlackTrans,
     Loading,
     Input,
-    Card;
+    Card,
+    Chip;
 Components = {
     ready: function() {
         App.log("\tInitializing components...");
@@ -27,6 +28,7 @@ Components = {
         Loading.ready();
         Input.ready();
         Card.ready();
+        Chip.ready();
         App.log("\tComponents initialized.");
     }
 }
