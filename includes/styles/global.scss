@@ -1,6 +1,9 @@
 //@extend-elements
 //original selectors
 //input[type="text"], input[type="password"], input[type="date"], input[type="time"], select, textarea
+$primary: #005cb9;
+$primary_light: #7faddc;
+
 @mixin box-shadow($value) {
 	-webkit-box-shadow: $value;
 	-moz-box-shadow: $value;
@@ -3063,7 +3066,7 @@ label {
 		display: inline;
 		margin-right: 12px;
 	}
-	span {
+	&:not(.switch) + span {
 		color: rgba(0,0,0,.6);
 		position: relative;
 		top: 28px;
@@ -3107,6 +3110,43 @@ label {
 			background-color: #005cb9;
 			i.md-icon {
 				display: block;
+			}
+		}
+	}
+	&.switch {
+		margin: 5px;
+		display: inline-block;
+		input[type="checkbox"] {
+			& + span {
+				display: inline-block;
+				width: 38px;
+				height: 16px;
+				margin: 0px 16px 0px 0px;
+				vertical-align: middle;
+				cursor: pointer;
+				float: left;
+				border-radius: 9px;
+				background-color: rgba(0,0,0,.2);
+				box-shadow: 0px 0px 5px rgba(0,0,0,.2);
+				position: relative;
+				i {
+					background: rgba(255,255,255,.9);
+					box-shadow: 0px 0px 5px rgba(0,0,0,.4);
+					border-radius: 100%;
+					position: absolute;
+					left: -5px;
+					top: -2px;
+					width: 21px;
+					height: 21px;
+					@include transition(all .2s ease-in-out);
+				}
+			}
+			&:checked + span {
+				background-color: $primary_light;
+			}
+			&:checked + span i {
+				background-color: $primary;
+				left: 20px;
 			}
 		}
 	}
@@ -3273,8 +3313,104 @@ table.data {
 		margin: 0;
 	}
 }
-ul.pagination {
-	margin: 0px;
-	padding: 0px;
-	list-style-type: none;
+.progress {
+	position: relative;
+	height: 2px;
+	display: block;
+	width: 100%;
+	background-color: #acece6;
+	border-radius: 2px;
+	background-clip: padding-box;
+	overflow: hidden;
+	.determinate {
+		position: absolute;
+		background-color: inherit;
+		top: 0;
+		bottom: 0;
+		background-color: #26a69a;
+		transition: width .3s linear;
+	}
+	.indeterminate {
+		background-color: #26a69a;
+		&:before {
+			content: '';
+			position: absolute;
+			background-color: inherit;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			will-change: left, right;
+			-webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+			animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			background-color: inherit;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			will-change: left, right;
+			-webkit-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+			animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+			-webkit-animation-delay: 1.15s;
+			animation-delay: 1.15s;
+		}
+	}
+}
+@-webkit-keyframes indeterminate {
+	0% {
+		left: -35%;
+		right: 100%;
+	}
+	60% {
+		left: 100%;
+		right: -90%;
+	}
+	100% {
+		left: 100%;
+		right: -90%;
+	}
+}
+@keyframes indeterminate {
+	0% {
+		left: -35%;
+		right: 100%;
+	}
+	60% {
+		left: 100%;
+		right: -90%;
+	}
+	100% {
+		left: 100%;
+		right: -90%;
+	}
+}
+@-webkit-keyframes indeterminate-short {
+	0% {
+		left: -200%;
+		right: 100%;
+	}
+	60% {
+		left: 107%;
+		right: -8%;
+	}
+	100% {
+		left: 107%;
+		right: -8%;
+	}
+}
+@keyframes indeterminate-short {
+	0% {
+		left: -200%;
+		right: 100%;
+	}
+	60% {
+		left: 107%;
+		right: -8%;
+	}
+	100% {
+		left: 107%;
+		right: -8%;
+	}
 }
