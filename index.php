@@ -7,4 +7,5 @@ else
 	define("ABSOLUTE_ROOT", "/oslo/");
 if(isset($_GET["url"]))
 	$url = $_GET["url"];
+//haha
 require_once(ROOT . DS . "library" . DS . "init.php");
