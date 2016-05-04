@@ -46,8 +46,8 @@
               <file leaf-file-name="index.phtml" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/app/Views/o/index.phtml">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="76">
-                      <caret line="163" column="70" selection-start-line="163" selection-start-column="70" selection-end-line="163" selection-end-column="70" />
+                    <state relative-caret-position="216">
+                      <caret line="173" column="65" selection-start-line="173" selection-start-column="65" selection-end-line="173" selection-end-column="65" />
                       <folding />
                     </state>
                   </provider>
@@ -70,8 +70,8 @@
               <file leaf-file-name="global.scss" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/includes/styles/global.scss">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="72">
-                      <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+                    <state relative-caret-position="54">
+                      <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
                       <folding />
                     </state>
                   </provider>
@@ -444,12 +444,12 @@
       <workItem from="1462321887211" duration="609000" />
       <workItem from="1462342392202" duration="517000" />
       <workItem from="1462343747072" duration="6593000" />
-      <workItem from="1462379088858" duration="2358000" />
+      <workItem from="1462379088858" duration="3625000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10887000" />
+    <option name="totallyTimeSpent" value="12154000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="24" width="1313" height="744" extended-state="6" />
@@ -626,16 +626,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Views/o/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="163" column="70" selection-start-line="163" selection-start-column="70" selection-end-line="163" selection-end-column="70" />
+        <state relative-caret-position="216">
+          <caret line="173" column="65" selection-start-line="173" selection-start-column="65" selection-end-line="173" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/styles/global.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        <state relative-caret-position="54">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
           <folding />
         </state>
       </provider>

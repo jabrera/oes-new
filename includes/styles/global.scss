@@ -2,7 +2,7 @@
 //original selectors
 //input[type="text"], input[type="password"], input[type="date"], input[type="time"], select, textarea
 $primary: #005cb9;
-$primary_light: #7faddc;
+$primary_light: #b2ceea;
 
 @mixin box-shadow($value) {
 	-webkit-box-shadow: $value;
@@ -3318,7 +3318,7 @@ table.data {
 	height: 2px;
 	display: block;
 	width: 100%;
-	background-color: #acece6;
+	background-color: $primary_light;
 	border-radius: 2px;
 	background-clip: padding-box;
 	overflow: hidden;
@@ -3327,11 +3327,11 @@ table.data {
 		background-color: inherit;
 		top: 0;
 		bottom: 0;
-		background-color: #26a69a;
+		background-color: $primary;
 		transition: width .3s linear;
 	}
 	.indeterminate {
-		background-color: #26a69a;
+		background-color: $primary;
 		&:before {
 			content: '';
 			position: absolute;

@@ -2375,7 +2375,7 @@ label {
         -o-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out; }
     label.switch input[type="checkbox"]:checked + span {
-      background-color: #7faddc; }
+      background-color: #b2ceea; }
     label.switch input[type="checkbox"]:checked + span i {
       background-color: #005cb9;
       left: 20px; }
@@ -2506,7 +2506,7 @@ table.data {
   height: 2px;
   display: block;
   width: 100%;
-  background-color: #acece6;
+  background-color: #b2ceea;
   border-radius: 2px;
   background-clip: padding-box;
   overflow: hidden; }
@@ -2515,10 +2515,10 @@ table.data {
     background-color: inherit;
     top: 0;
     bottom: 0;
-    background-color: #26a69a;
+    background-color: #005cb9;
     transition: width .3s linear; }
   .progress .indeterminate {
-    background-color: #26a69a; }
+    background-color: #005cb9; }
     .progress .indeterminate:before {
       content: '';
       position: absolute;
