@@ -3066,7 +3066,7 @@ label {
 		display: inline;
 		margin-right: 12px;
 	}
-	&:not(.switch) + span {
+	&:not(.switch) span {
 		color: rgba(0,0,0,.6);
 		position: relative;
 		top: 28px;

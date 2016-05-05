@@ -2295,7 +2295,7 @@ label {
   label.inline {
     display: inline;
     margin-right: 12px; }
-  label:not(.switch) + span {
+  label:not(.switch) span {
     color: rgba(0, 0, 0, 0.6);
     position: relative;
     top: 28px;
@@ -2305,7 +2305,7 @@ label {
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }
-    label:not(.switch) + span.top {
+    label:not(.switch) span.top {
       top: 0;
       font-size: 12px; }
   label input[type="checkbox"] {
