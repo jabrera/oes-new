@@ -2817,12 +2817,12 @@ a {
 	margin-right: 24px;
 }
 .table {
-	display: table;
-}
-.row {
-	display: table-row;
-	.cell {
-		display: table-cell;
+	display: table !important;
+	.row {
+		display: table-row !important;
+		.cell {
+			display: table-cell !important;
+		}
 	}
 }
 [class^="ripple"] {
@@ -3315,7 +3315,7 @@ table.data {
 }
 .progress {
 	position: relative;
-	height: 2px;
+	height: 3px;
 	display: block;
 	width: 100%;
 	background-color: $primary_light;
