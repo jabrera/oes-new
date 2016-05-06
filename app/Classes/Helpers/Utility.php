@@ -27,29 +27,25 @@
  *
  * @project				Oslo Framework
  * @package				oslo-framework
- * @file				UniqueIdentifier.php
+ * @file				Utility.php
  * @author				Juvar Abrera <me@juvarabrera.com>
  * @copyright			2016 Juvar Abrera
- * @lastModified		5/6/16 11:11 AM
+ * @lastModified		5/6/16 11:20 AM
  */
 
-namespace Oslo\Security;
+namespace Oslo\Helpers;
 
-/**
- * Class UniqueIdentifier
- *
- * @package Oslo\Security
- */
-class UniqueIdentifier {
-	
+
+class Utility {
+
 	/**
-	 * Generates 8 character random string
+	 * Removes tab into a single space
+	 * 
+	 * @param $str
 	 *
 	 * @return string
 	 */
-	public static function generate() {
-		$chars = "abcdefghijklmnopqrstuvwxyz0123456789";
-		return substr(str_shuffle(str_repeat($chars, 8)), 0, 8);
+	public static function removeTabs($str) {
+		return trim(preg_replace("/\n| +/", " ", $str));
 	}
-
 }

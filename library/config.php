@@ -1,29 +1,69 @@
 <?php
 
+/**
+ * If true, errors and notice will popup to
+ * debug your website
+ */
 define("DEVELOPMENT_ENVIRONMENT", true);
 
+/**
+ * This will be your default controller without
+ * the word 'Controller'
+ */
 define("DEFAULT_CONTROLLER", "o");
 
+/**
+ * This will be your default action for every
+ * controller. Make sure you have this function
+ * in every controller to avoid errors.
+ */
 define("DEFAULT_ACTION", "index");
 
+/**
+ * The primary color of your website
+ */
 define("PRIMARY_COLOR", "#005cb9");
 
-//define("DB_USER", "badruaej@v5fn8q64lv");
-//
-//define("DB_PASS", "\$enti.Web");
-//
-//define("DB_HOST", "tcp:v5fn8q64lv.database.windows.net,1433");
-//
-//define("DB_NAME", "sentiblog");
-//
-//define("DB_ENGINE", "sqlsrv");
-
+/**
+ * User for database
+ */
 define("DB_USER", "root");
 
+/**
+ * Password for database
+ */
 define("DB_PASS", "");
 
+/**
+ * Host name for database
+ */
 define("DB_HOST", "localhost");
 
+/**
+ * Database name
+ */
 define("DB_NAME", "oslomvc");
 
+/**
+ * Database Engine.
+ * mysql | sqlsrv
+ */
 define("DB_ENGINE", "mysql");
+
+/**
+ * The default layout to use in every page.
+ * Make sure you have this layout with a
+ * .phtml extension in Views/shared/
+ */
+define("DEFAULT_LAYOUT", "_layout");
+
+/**
+ * Default page title for your site. You
+ * may change this in your controller
+ */
+define("PAGETITLE", "Oslo Framework");
+
+/**
+ * Unique session prefix
+ */
+define("SESSION_PREFIX", "oslo_");
