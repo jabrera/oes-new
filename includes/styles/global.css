@@ -5,11 +5,6 @@ select, textarea, input[type="text"], input[type="password"], input[type="date"]
   padding: 8px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.23); }
 
-@font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Material Icons"), local("MaterialIcons-Regular"), url("../fonts/MaterialIcons-Regular.woff2") format("woff2"), url("../fonts/MaterialIcons-Regular.woff") format("woff"), url("../fonts/MaterialIcons-Regular.ttf") format("truetype"); }
 body {
   background: #e7e7e7;
   margin: 0;
@@ -2075,10 +2070,12 @@ a {
 
 .table {
   display: table !important; }
-  .table .row {
-    display: table-row !important; }
-    .table .row .cell {
-      display: table-cell !important; }
+
+.row {
+  display: table-row !important; }
+
+.cell {
+  display: table-cell !important; }
 
 [class^="ripple"] {
   overflow: hidden;
@@ -2295,6 +2292,7 @@ label {
     display: inline;
     margin-right: 12px; }
   label:not(.switch) span {
+    cursor: text;
     color: rgba(0, 0, 0, 0.6);
     position: relative;
     top: 28px;
@@ -2581,5 +2579,30 @@ table.data {
   100% {
     left: 107%;
     right: -8%; } }
+ul.pagination {
+  margin: 4px;
+  display: inline-block;
+  list-style-type: none;
+  float: right; }
+  ul.pagination li {
+    display: inline-block;
+    float: left; }
+    ul.pagination li a {
+      display: block;
+      width: 48px;
+      height: 48px;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center; }
+    ul.pagination li .cell {
+      height: 48px;
+      vertical-align: middle;
+      text-align: center;
+      white-space: nowrap;
+      padding: 0px 8px; }
+    ul.pagination li select {
+      width: auto;
+      border: 0px;
+      padding: 0px; }
 
 /*# sourceMappingURL=global.css.map */

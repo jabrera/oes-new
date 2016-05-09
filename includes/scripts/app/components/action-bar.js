@@ -7,7 +7,7 @@ ActionBar = {
         ActionBar.addMarginToIcons();
         ActionBar.responsiveTitle();
         ActionBar.valignItems();
-        App.log("\t\tActionBar initialized.")
+        App.log("\t\tActionBar initialized.");
     },
     execute: function() {
         this.el.find(".menu-icon").click(function() {

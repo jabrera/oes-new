@@ -89,7 +89,7 @@
 		</div>
 		<div class="card">
 			<h4>Hehe</h4>
-			<div class="data-action-card">
+			<div class="data-action-card" data-tooltip-position="bottom">
 				<div class="table">
 					<div class="row">
 						<div class="cell middle">
@@ -97,8 +97,8 @@
 						</div>
 						<div class="cell fit">
 							<ul class="nav">
-								<li><a><span><i class="md-icon">select_all</i></span></a></li>
-								<li><a><span><i class="md-icon">clear</i></span></a></li>
+								<li><a data-tooltip-text="Select all"><span><i class="md-icon">select_all</i></span></a></li>
+								<li><a data-tooltip-text="Deselect all"><span><i class="md-icon">clear</i></span></a></li>
 								<li><a><span><i class="md-icon">more_vert</i></span></a>
 									<ul class="menu">
 										<li><a><span><i class="md-icon">delete</i>Delete</span></a></li>
@@ -154,6 +154,19 @@
 					</td>
 				</tr>
 			</table>
+			<ul class="pagination" data-tooltip-position="top">
+				<li><a data-tooltip-text="First page" href="#" data-tooltip-text="First page"><i class="md-icon">first_page</i></a></li>
+				<li><a data-tooltip-text="Previous" href="#"><i class="md-icon">chevron_left</i></a></li>
+				<li>
+					<div class="cell">
+						<select name="page">
+							<option value="1">1</option>
+						</select> of 2
+					</div>
+				</li>
+				<li><a data-tooltip-text="Next" href="#"><i class="md-icon">chevron_right</i></a></li>
+				<li><a data-tooltip-text="Last page" href="#"><i class="md-icon">last_page</i></a></li>
+			</ul>
 			<script>
 				$(document).ready(function() {
 					$dt = new DataTable($("#dt-1"));

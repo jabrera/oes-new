@@ -48,12 +48,12 @@ $primary_light: #b2ceea;
 }
 
 
-@font-face {
-	font-family: 'Material Icons';
-	font-style: normal;
-	font-weight: 400;
-	src: local('Material Icons'), local('MaterialIcons-Regular'), url('../fonts/MaterialIcons-Regular.woff2') format('woff2'), url('../fonts/MaterialIcons-Regular.woff') format('woff'), url('../fonts/MaterialIcons-Regular.ttf') format('truetype');
-}
+//@font-face {
+//	font-family: 'Material Icons';
+//	font-style: normal;
+//	font-weight: 400;
+//	src: local('Material Icons'), local('MaterialIcons-Regular'), url('../fonts/MaterialIcons-Regular.woff2') format('woff2'), url('../fonts/MaterialIcons-Regular.woff') format('woff'), url('../fonts/MaterialIcons-Regular.ttf') format('truetype');
+//}
 body {
 	background: #e7e7e7;
 	margin: 0;
@@ -2818,12 +2818,12 @@ a {
 }
 .table {
 	display: table !important;
-	.row {
-		display: table-row !important;
-		.cell {
-			display: table-cell !important;
-		}
-	}
+}
+.row {
+	display: table-row !important;
+}
+.cell {
+	display: table-cell !important;
 }
 [class^="ripple"] {
 	overflow: hidden;
@@ -3067,6 +3067,7 @@ label {
 		margin-right: 12px;
 	}
 	&:not(.switch) span {
+		cursor: text;
 		color: rgba(0,0,0,.6);
 		position: relative;
 		top: 28px;
@@ -3412,5 +3413,35 @@ table.data {
 	100% {
 		left: 107%;
 		right: -8%;
+	}
+}
+ul.pagination {
+	margin: 4px;
+	display: inline-block;
+	list-style-type: none;
+	float: right;
+	li {
+		display: inline-block;
+		float: left;
+		a {
+			display: block;
+			width: 48px;
+			height: 48px;
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+		}
+		.cell {
+			height: 48px;
+			vertical-align: middle;
+			text-align: center;
+			white-space: nowrap;
+			padding: 0px 8px;
+		}
+		select {
+			width: auto;
+			border: 0px;
+			padding: 0px;
+		}
 	}
 }

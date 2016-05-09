@@ -11,7 +11,8 @@ var ActionBar,
     Loading,
     Input,
     Card,
-    Chip;
+    Chip,
+	Tooltip;
 Components = {
     ready: function() {
         App.log("\tInitializing components...");
@@ -29,6 +30,7 @@ Components = {
         Input.ready();
         Card.ready();
         Chip.ready();
+		Tooltip.ready();
         App.log("\tComponents initialized.");
     }
 }
