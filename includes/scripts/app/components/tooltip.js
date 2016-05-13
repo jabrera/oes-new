@@ -53,18 +53,31 @@ Tooltip = {
 				});
 			}
 		}).hover(function() {
+			$(this).css({
+				"overflow": "visible"
+			})
 			$(this).find(".tooltip").css({
 				"display": "block"
 			}).animate({
 				"opacity": "1"
 			}, 250);
 		}, function() {
+			if($(this).hasClass("ripple")) {
+				$(this).css({
+					"overflow": "hidden"
+				})
+			}
 			$(this).find(".tooltip").animate({
 				"opacity": "0"
 			}, 100, function() {
 				$(this).css("display", "none")
 			});
 		}).click(function() {
+			if($(this).hasClass("ripple")) {
+				$(this).css({
+					"overflow": "hidden"
+				});
+			}
 			$(this).find(".tooltip").animate({
 				"opacity": "0"
 			}, 100, function() {

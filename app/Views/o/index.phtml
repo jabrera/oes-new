@@ -97,8 +97,8 @@
 						</div>
 						<div class="cell fit">
 							<ul class="nav">
-								<li><a data-tooltip-text="Select all"><span><i class="md-icon">select_all</i></span></a></li>
-								<li><a data-tooltip-text="Deselect all"><span><i class="md-icon">clear</i></span></a></li>
+								<li><a data-tooltip-text="Select all" onclick="$dt.selectAll();"><span><i class="md-icon">select_all</i></span></a></li>
+								<li><a data-tooltip-text="Deselect all" onclick="$dt.clearSelection();"><span><i class="md-icon">clear</i></span></a></li>
 								<li><a><span><i class="md-icon">more_vert</i></span></a>
 									<ul class="menu">
 										<li><a><span><i class="md-icon">delete</i>Delete</span></a></li>
@@ -154,7 +154,7 @@
 					</td>
 				</tr>
 			</table>
-			<ul class="pagination" data-tooltip-position="top">
+			<ul class="pagination ripple" data-tooltip-position="top">
 				<li><a data-tooltip-text="First page" href="#" data-tooltip-text="First page"><i class="md-icon">first_page</i></a></li>
 				<li><a data-tooltip-text="Previous" href="#"><i class="md-icon">chevron_left</i></a></li>
 				<li>
@@ -189,6 +189,10 @@
 						<option value="3">4</option>
 					</select></label>
 				<label for=""><span>Hello</span><textarea></textarea></label>
+				<label><input type="radio" name="type"><i class="md-icon"></i>Hehe</label>
+				<label><input type="radio" name="type"><i class="md-icon"></i>Hehe</label>
+				<label><input type="radio" name="type"><i class="md-icon"></i>Hehe</label>
+				<label><input type="radio" name="type"><i class="md-icon"></i>Hehe</label>
 			</p>
 			<ul class="buttons right ripple">
 				<li><a onclick="$dt.dumpData();" class="flat_button">Ok</a></li>

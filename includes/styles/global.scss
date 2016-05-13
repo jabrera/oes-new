@@ -3078,7 +3078,7 @@ label {
 			font-size: 12px;
 		}
 	}
-	input[type="checkbox"] {
+	input[type="checkbox"], input[type="radio"] {
 		display: none;
 	}
 	&:not(.switch) input[type="checkbox"] {
@@ -3148,6 +3148,25 @@ label {
 			&:checked + span i {
 				background-color: $primary;
 				left: 20px;
+			}
+		}
+	}
+	&:not(.switch) input[type="radio"] {
+		+ .md-icon {
+			font-size: 22px !important;
+			margin: 0;
+			margin-right: 12px;
+			color: #000;
+			opacity: .54;
+			&:before {
+				content: "radio_button_unchecked";
+			}
+		}
+		&:checked + i.md-icon {
+			opacity: 1;
+			color: $primary;
+			&:before {
+				content: "radio_button_checked";
 			}
 		}
 	}

@@ -2305,7 +2305,7 @@ label {
     label:not(.switch) span.top {
       top: 0;
       font-size: 12px; }
-  label input[type="checkbox"] {
+  label input[type="checkbox"], label input[type="radio"] {
     display: none; }
   label:not(.switch) input[type="checkbox"] + span {
     display: inline-block;
@@ -2376,6 +2376,19 @@ label {
     label.switch input[type="checkbox"]:checked + span i {
       background-color: #005cb9;
       left: 20px; }
+  label:not(.switch) input[type="radio"] + .md-icon {
+    font-size: 22px !important;
+    margin: 0;
+    margin-right: 12px;
+    color: #000;
+    opacity: .54; }
+    label:not(.switch) input[type="radio"] + .md-icon:before {
+      content: "radio_button_unchecked"; }
+  label:not(.switch) input[type="radio"]:checked + i.md-icon {
+    opacity: 1;
+    color: #005cb9; }
+    label:not(.switch) input[type="radio"]:checked + i.md-icon:before {
+      content: "radio_button_checked"; }
 
 input {
   font-family: 'Roboto';
