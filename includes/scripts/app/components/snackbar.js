@@ -39,7 +39,7 @@ Snackbar = {
         speed *= Animation.baseSpeed;
         this.hide("");
         var bottom = 0;
-        if(!BottomNavigation.el.is(".side"))
+        if(BottomNavigation.el.length != 0 && !BottomNavigation.el.is(".side"))
             bottom = BottomNavigation.outerHeight();
         this.el.animate({
             "bottom": bottom+"px"
@@ -51,6 +51,33 @@ Snackbar = {
             "bottom": 0-(this.outerHeight() + 36) + "px"
         }, speed);
     },
+	text: function(text) {
+		clearTimeout(this.to);
+		var self = this;
+		if(this.isShown()) {
+			this.hide(1);
+			setTimeout(function() {
+				self.el.html(text);
+				self.fixPosition(0);
+				setTimeout(function() {
+					self.show(1);
+					self.to = setTimeout(function() {
+						self.hide(1);
+					}, 5000);
+				}, 100)
+			}, 500)
+		} else {
+			self.el.html(text);
+			self.fixPosition(0);
+			setTimeout(function() {
+				self.show(1);
+				self.to = setTimeout(function() {
+					self.hide(1);
+				}, 5000);
+			}, 100)
+		}
+
+	},
     showContent: function(content) {
         clearTimeout(this.to);
         if(this.isShown()) {

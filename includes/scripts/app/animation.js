@@ -8,13 +8,12 @@ Animation = {
         App.log("\tAnimation initialized.")
     },
     rippleEffect: function() {
-        $(".ripple").not("a").each(function() {
-            $(this).find("a:not(.noripple)").addClass("ripple");
-        })
+		$(".ripple").not("a").each(function() {
+			$(this).find("a:not(.noripple)").addClass("ripple");
+		})
         var ink, d, x, y;
         $("a").click(function(e){
             if($(this).hasClass("ripple")) {
-				
                 $clicked = $(this);
                 if($clicked.children(".ink").length == 0)
                     $clicked.prepend("<span class=\"ink\"></span>");

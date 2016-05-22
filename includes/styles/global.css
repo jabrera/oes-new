@@ -2168,6 +2168,9 @@ ul.grid-options {
     ul.grid-options li span {
       display: block;
       font-size: 12px; }
+    ul.grid-options li img {
+      margin-bottom: 8px;
+      width: 48px; }
     ul.grid-options li i.md-icon {
       margin-bottom: 8px;
       font-size: 48px !important; }
