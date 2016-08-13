@@ -13,6 +13,8 @@ Layout = {
             BottomNavigation.sideLayout();
             if(fixedSlider)
                 Layout.fixedSliderLayout();
+            else
+                Layout.hideSliderLayout();
         } else {
             BottomNavigation.bottomLayout();
             Layout.hideSliderLayout()

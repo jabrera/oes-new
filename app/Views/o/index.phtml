@@ -197,11 +197,9 @@
 			<ul class="buttons right ripple">
 				<li><a onclick="$dt.dumpData();" class="flat_button">Ok</a></li>
 				<script>
-					$(document).ready(function() {
-						$share = new Share();
-						$share.link = "http://www.google.com";
-						$share.to(["facebook", "url", "twitter"]);
-					})
+					$share = new Share();
+					$share.link = "http://www.google.com";
+					$share.to(["facebook", "url", "twitter"]);
 				</script>
 				<li><a onclick="$share.show();" class="raised_button">Share</a></li>
 				<li><a href="#" class="raised_button">Ok</a></li>

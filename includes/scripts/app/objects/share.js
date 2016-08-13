@@ -3,11 +3,11 @@ function Share() {
 	this.social = [
 		{
 			name: "facebook",
-			action: '<li><a><img src="includes/images/resources/facebook.png"><span>Facebook</span></a></li>'
+			action: '<li><a id="shareFacebook"><img src="includes/images/resources/facebook.png"><span>Facebook</span></a></li>'
 		},
 		{
 			name: "twitter",
-			action: '<li><a><img src="includes/images/resources/twitter.png"><span>Twitter</span></a></li>'
+			action: '<li><a id="shareTwitter"><img src="includes/images/resources/twitter.png"><span>Twitter</span></a></li>'
 		},
 		{
 			name: "url",
@@ -18,13 +18,20 @@ function Share() {
 }
 Share.prototype = {
 	ready: function() {
-		$obj = this;
+		var obj = this;
 		$(".bottom-sheet #shareFacebook").click(function() {
 			$width = 500;
 			$height = 400;
 			$top = ($(window).height()-$height)/2;
 			$left = ($(window).width()-$width)/2;
-			window.open("https://www.facebook.com/sharer/sharer.php?u="+$obj.link, "_blank", "toolbar=no, scrollbars=yes, resizable=no, top="+$top+", left="+$left+", width="+$width+", height="+$height+"");
+			window.open("https://www.facebook.com/sharer/sharer.php?u="+obj.link, "_blank", "toolbar=no, scrollbars=yes, resizable=no, top="+$top+", left="+$left+", width="+$width+", height="+$height+"");
+		})
+		$(".bottom-sheet #shareTwitter").click(function() {
+			$width = 500;
+			$height = 400;
+			$top = ($(window).height()-$height)/2;
+			$left = ($(window).width()-$width)/2;
+			window.open("https://twitter.com/home?status="+obj.link, "_blank", "toolbar=no, scrollbars=yes, resizable=no, top="+$top+", left="+$left+", width="+$width+", height="+$height+"");
 		})
 	},
 	to: function(to) {
