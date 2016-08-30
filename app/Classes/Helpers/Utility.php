@@ -35,16 +35,24 @@
 
 namespace Oslo\Helpers;
 
+use Oslo\Interfaces as Interfaces;
 
-class Utility {
+/**
+ * Compilations of utility functions to
+ * be used for the application
+ *
+ * Class Utility
+ * @package Oslo\Helpers
+ */
+class Utility implements Interfaces\IUtility {
 
-	/**
-	 * Removes tab into a single space
-	 * 
-	 * @param $str
-	 *
-	 * @return string
-	 */
+    /**
+     * Removes tab into a single space
+     *
+     * @param $str
+     *
+     * @return string
+     */
 	public static function removeTabs($str) {
 		return trim(preg_replace("/\n| +/", " ", $str));
 	}

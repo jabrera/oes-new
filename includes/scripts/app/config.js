@@ -1,2 +1,2 @@
-var development = false;
+var development = true;
 var fixedSlider = false;

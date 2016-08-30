@@ -35,21 +35,23 @@
 
 namespace Oslo\Security;
 
+use Oslo\Interfaces as Interfaces;
+
 /**
  * Class Password
  *
  * @package Oslo\Security
  */
-class Password {
+class Password implements Interfaces\IPassword {
 
-	/**
-	 * Simple password hasher
-	 * 
-	 * @param $password
-	 *
-	 * @return hashed password
-	 *
-	 */
+    /**
+     * Simple password hasher
+     *
+     * @param $password
+     *
+     * @return hashed password
+     *
+     */
 	public static function hash($password) {
         return password_hash($password, PASSWORD_DEFAULT);
     }

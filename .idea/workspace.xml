@@ -2,46 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffa00560-ed08-429a-aae9-070891999173" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Classes/Interfaces/IElement.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Classes/Interfaces/INode.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Classes/Interfaces/IPassword.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Classes/Interfaces/ISession.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Classes/Interfaces/IUID.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Classes/Interfaces/IUtility.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/9dde19d7be74551f5a2dd99e78ec4a432ed7c25c/components.scssc" afterPath="$PROJECT_DIR$/.sass-cache/9dde19d7be74551f5a2dd99e78ec4a432ed7c25c/components.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/9dde19d7be74551f5a2dd99e78ec4a432ed7c25c/global.scssc" afterPath="$PROJECT_DIR$/.sass-cache/9dde19d7be74551f5a2dd99e78ec4a432ed7c25c/global.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/fonts/MaterialIcons-Regular.eot" afterPath="$PROJECT_DIR$/includes/fonts/MaterialIcons-Regular.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/fonts/MaterialIcons-Regular.ttf" afterPath="$PROJECT_DIR$/includes/fonts/MaterialIcons-Regular.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/fonts/MaterialIcons-Regular.woff" afterPath="$PROJECT_DIR$/includes/fonts/MaterialIcons-Regular.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/fonts/MaterialIcons-Regular.woff2" afterPath="$PROJECT_DIR$/includes/fonts/MaterialIcons-Regular.woff2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/images/resources/facebook.png" afterPath="$PROJECT_DIR$/includes/images/resources/facebook.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/images/resources/oslo2.png" afterPath="$PROJECT_DIR$/includes/images/resources/oslo2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/images/resources/oslo3.png" afterPath="$PROJECT_DIR$/includes/images/resources/oslo3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/images/resources/oslo4.png" afterPath="$PROJECT_DIR$/includes/images/resources/oslo4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/images/resources/twitter.png" afterPath="$PROJECT_DIR$/includes/images/resources/twitter.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/Oslo_Framework.xml" afterPath="$PROJECT_DIR$/.idea/copyright/Oslo_Framework.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/oslo-framework.iml" afterPath="$PROJECT_DIR$/.idea/oslo-framework.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE" afterPath="$PROJECT_DIR$/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Classes/Database/MySQL.php" afterPath="$PROJECT_DIR$/app/Classes/Database/MySQL.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Classes/Database/SQLSRV.php" afterPath="$PROJECT_DIR$/app/Classes/Database/SQLSRV.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Classes/HTML/Element.php" afterPath="$PROJECT_DIR$/app/Classes/HTML/Element.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Classes/HTML/Node.php" afterPath="$PROJECT_DIR$/app/Classes/HTML/Node.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Classes/Helpers/Utility.php" afterPath="$PROJECT_DIR$/app/Classes/Helpers/Utility.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Classes/Interfaces/IDatabase.php" afterPath="$PROJECT_DIR$/app/Classes/Interfaces/IDatabase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Classes/Security/Password.php" afterPath="$PROJECT_DIR$/app/Classes/Security/Password.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Classes/Security/Session.php" afterPath="$PROJECT_DIR$/app/Classes/Security/Session.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Classes/Security/UniqueIdentifier.php" afterPath="$PROJECT_DIR$/app/Classes/Security/UniqueIdentifier.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Views/o/index.phtml" afterPath="$PROJECT_DIR$/app/Views/o/index.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Views/o/test.phtml" afterPath="$PROJECT_DIR$/app/Views/o/test.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Views/shared/_layout.phtml" afterPath="$PROJECT_DIR$/app/Views/shared/_layout.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/fonts/MaterialIcons-Regular.ijmap" afterPath="$PROJECT_DIR$/includes/fonts/MaterialIcons-Regular.ijmap" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/fonts/MaterialIcons-Regular.svg" afterPath="$PROJECT_DIR$/includes/fonts/MaterialIcons-Regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/scripts/app/components/card.js" afterPath="$PROJECT_DIR$/includes/scripts/app/components/card.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/scripts/app/components/chip.js" afterPath="$PROJECT_DIR$/includes/scripts/app/components/chip.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/scripts/app/components/tooltip.js" afterPath="$PROJECT_DIR$/includes/scripts/app/components/tooltip.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/scripts/app/config.js" afterPath="$PROJECT_DIR$/includes/scripts/app/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/scripts/app/layout.js" afterPath="$PROJECT_DIR$/includes/scripts/app/layout.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/scripts/app/objects/share.js" afterPath="$PROJECT_DIR$/includes/scripts/app/objects/share.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/scripts/clipboard.min.js" afterPath="$PROJECT_DIR$/includes/scripts/clipboard.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/styles/components.css" afterPath="$PROJECT_DIR$/includes/styles/components.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/styles/components.css.map" afterPath="$PROJECT_DIR$/includes/styles/components.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/styles/components.scss" afterPath="$PROJECT_DIR$/includes/styles/components.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/styles/global.css" afterPath="$PROJECT_DIR$/includes/styles/global.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/styles/global.css.map" afterPath="$PROJECT_DIR$/includes/styles/global.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/styles/global.scss" afterPath="$PROJECT_DIR$/includes/styles/global.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/config.php" afterPath="$PROJECT_DIR$/library/config.php" />
     </list>
     <ignored path="oslo-framework.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,7 +38,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -67,51 +51,71 @@
         <splitter split-orientation="horizontal" split-proportion="0.5">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file leaf-file-name="index.phtml" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/app/Views/o/index.phtml">
+              <file leaf-file-name="ISession.php" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/app/Classes/Interfaces/ISession.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="3618">
-                      <caret line="201" column="30" selection-start-line="201" selection-start-column="30" selection-end-line="201" selection-end-column="30" />
+                    <state relative-caret-position="18">
+                      <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
                       <folding />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="action-bar.phtml" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/app/Views/shared/guest/action-bar.phtml">
+              <file leaf-file-name="Password.php" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/app/Classes/Security/Password.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="324">
-                      <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+                    <state relative-caret-position="54">
+                      <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
                       <folding />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="test.phtml" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/app/Views/o/test.phtml">
+              <file leaf-file-name="Session.php" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/app/Classes/Security/Session.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="36">
-                      <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+                    <state relative-caret-position="-828">
+                      <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
                       <folding />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="showContent.js" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/includes/scripts/app/extensions/showContent.js">
+              <file leaf-file-name="IElement.php" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/app/Classes/Interfaces/IElement.php">
                   <provider selected="true" editor-type-id="text-editor">
                     <state relative-caret-position="234">
-                      <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="21" selection-end-column="15" />
+                      <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
                       <folding />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="_layout.phtml" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/app/Views/shared/_layout.phtml">
+              <file leaf-file-name="IUID.php" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/app/Classes/Interfaces/IUID.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="231">
-                      <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+                    <state relative-caret-position="126">
+                      <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="IUtility.php" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/app/Classes/Interfaces/IUtility.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="126">
+                      <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="IDatabase.php" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/app/Classes/Interfaces/IDatabase.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="288">
+                      <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
                       <folding />
                     </state>
                   </provider>
@@ -124,8 +128,8 @@
               <file leaf-file-name="global.scss" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/includes/styles/global.scss">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="46">
-                      <caret line="2862" column="21" selection-start-line="2862" selection-start-column="21" selection-end-line="2862" selection-end-column="21" />
+                    <state relative-caret-position="18">
+                      <caret line="3" column="17" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="17" />
                       <folding />
                     </state>
                   </provider>
@@ -134,8 +138,8 @@
               <file leaf-file-name="components.scss" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/includes/styles/components.scss">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="10278">
-                      <caret line="571" column="16" selection-start-line="571" selection-start-column="9" selection-end-line="571" selection-end-column="16" />
+                    <state relative-caret-position="54">
+                      <caret line="3" column="17" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="17" />
                       <folding />
                     </state>
                   </provider>
@@ -147,11 +151,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="components.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/includes/scripts/app/components.js">
+          <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/includes/scripts/app/app.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="576">
-                  <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+                <state relative-caret-position="702">
+                  <caret line="39" column="3" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
                   <folding />
                 </state>
               </provider>
@@ -207,20 +211,20 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="config.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/includes/scripts/app/config.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="18">
-                  <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+                  <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="layout.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="layout.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/includes/scripts/app/layout.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="94">
+                <state relative-caret-position="288">
                   <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
                   <folding />
                 </state>
@@ -258,38 +262,44 @@
         <option value="$PROJECT_DIR$/includes/scripts/app/components/chip.js" />
         <option value="$PROJECT_DIR$/includes/scripts/app/app.js" />
         <option value="$PROJECT_DIR$/includes/scripts/app/components/view.js" />
-        <option value="$PROJECT_DIR$/app/Classes/Database/MySQL.php" />
         <option value="$PROJECT_DIR$/app/Classes/Database/Query.php" />
-        <option value="$PROJECT_DIR$/app/Classes/Database/SQLSRV.php" />
-        <option value="$PROJECT_DIR$/app/Classes/Helpers/Utility.php" />
-        <option value="$PROJECT_DIR$/app/Classes/HTML/Element.php" />
-        <option value="$PROJECT_DIR$/app/Classes/HTML/Node.php" />
-        <option value="$PROJECT_DIR$/app/Classes/Interfaces/IDatabase.php" />
-        <option value="$PROJECT_DIR$/app/Classes/Security/Password.php" />
-        <option value="$PROJECT_DIR$/app/Classes/Security/Session.php" />
-        <option value="$PROJECT_DIR$/app/Classes/Security/UniqueIdentifier.php" />
         <option value="$PROJECT_DIR$/app/Controllers/OController.php" />
         <option value="$PROJECT_DIR$/app/Core/Controller.php" />
         <option value="$PROJECT_DIR$/app/Core/Model.php" />
         <option value="$PROJECT_DIR$/app/Core/View.php" />
         <option value="$PROJECT_DIR$/library/init.php" />
-        <option value="$PROJECT_DIR$/library/config.php" />
         <option value="$PROJECT_DIR$/includes/scripts/app/components/action-bar.js" />
         <option value="$PROJECT_DIR$/includes/scripts/app/components.js" />
-        <option value="$PROJECT_DIR$/includes/styles/components.scss" />
         <option value="$PROJECT_DIR$/includes/scripts/app/components/tooltip.js" />
-        <option value="$PROJECT_DIR$/app/Views/o/test.phtml" />
         <option value="$PROJECT_DIR$/includes/scripts/app/animation.js" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/includes/styles/global.scss" />
         <option value="$PROJECT_DIR$/app/Views/shared/guest/action-bar.phtml" />
         <option value="$PROJECT_DIR$/includes/scripts/app/components/snackbar.js" />
         <option value="$PROJECT_DIR$/includes/scripts/app/components/bottom-sheet.js" />
-        <option value="$PROJECT_DIR$/app/Views/o/index.phtml" />
         <option value="$PROJECT_DIR$/includes/scripts/app/objects/share.js" />
-        <option value="$PROJECT_DIR$/app/Views/shared/_layout.phtml" />
-        <option value="$PROJECT_DIR$/includes/scripts/app/config.js" />
         <option value="$PROJECT_DIR$/includes/scripts/app/layout.js" />
+        <option value="$PROJECT_DIR$/includes/styles/global.scss" />
+        <option value="$PROJECT_DIR$/includes/styles/components.scss" />
+        <option value="$PROJECT_DIR$/library/config.php" />
+        <option value="$PROJECT_DIR$/app/Views/shared/_layout.phtml" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/includes/scripts/app/config.js" />
+        <option value="$PROJECT_DIR$/app/Views/o/index.phtml" />
+        <option value="$PROJECT_DIR$/app/Classes/Security/Session.php" />
+        <option value="$PROJECT_DIR$/app/Classes/Database/MySQL.php" />
+        <option value="$PROJECT_DIR$/app/Classes/Database/SQLSRV.php" />
+        <option value="$PROJECT_DIR$/app/Classes/Security/Password.php" />
+        <option value="$PROJECT_DIR$/app/Classes/Security/UniqueIdentifier.php" />
+        <option value="$PROJECT_DIR$/app/Classes/HTML/Node.php" />
+        <option value="$PROJECT_DIR$/app/Classes/HTML/Element.php" />
+        <option value="$PROJECT_DIR$/app/Classes/Interfaces/IElement.php" />
+        <option value="$PROJECT_DIR$/app/Classes/Interfaces/IDatabase.php" />
+        <option value="$PROJECT_DIR$/app/Classes/Interfaces/INode.php" />
+        <option value="$PROJECT_DIR$/app/Classes/Interfaces/IPassword.php" />
+        <option value="$PROJECT_DIR$/app/Classes/Interfaces/ISession.php" />
+        <option value="$PROJECT_DIR$/app/Classes/Interfaces/IUID.php" />
+        <option value="$PROJECT_DIR$/app/Classes/Helpers/Utility.php" />
+        <option value="$PROJECT_DIR$/app/Classes/Interfaces/IUtility.php" />
+        <option value="$PROJECT_DIR$/app/Views/o/test.phtml" />
       </list>
     </option>
   </component>
@@ -304,10 +314,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="52" />
-    <option name="y" value="52" />
-    <option name="width" value="1313" />
-    <option name="height" value="715" />
+    <option name="x" value="-1366" />
+    <option name="y" value="1560" />
+    <option name="width" value="1366" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -350,7 +360,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -393,47 +402,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="includes" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oslo-framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oslo-framework" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="includes" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oslo-framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oslo-framework" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="includes" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Views" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -455,7 +428,21 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shared" />
+              <option name="myItemId" value="o" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oslo-framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oslo-framework" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -473,7 +460,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Views" />
+              <option name="myItemId" value="Classes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Security" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -488,11 +479,86 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Classes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Interfaces" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oslo-framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oslo-framework" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Classes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HTML" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oslo-framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oslo-framework" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Classes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Helpers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oslo-framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oslo-framework" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Classes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Database" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -500,11 +566,20 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
       <method />
     </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -532,6 +607,19 @@
       <scripts />
       <node-interpreter value="project" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
       <method />
     </configuration>
   </component>
@@ -577,20 +665,33 @@
       <workItem from="1464085407951" duration="8000" />
       <workItem from="1466309845035" duration="1421000" />
       <workItem from="1466911157761" duration="532000" />
+      <workItem from="1471089623716" duration="15000" />
+      <workItem from="1471090596190" duration="3665000" />
+      <workItem from="1471312213793" duration="1786000" />
+      <workItem from="1471315955737" duration="2257000" />
+      <workItem from="1471907441704" duration="227000" />
+      <workItem from="1471909154117" duration="155000" />
+      <workItem from="1471909547683" duration="55000" />
+      <workItem from="1472307410158" duration="3195000" />
+      <workItem from="1472438482046" duration="5515000" />
+      <workItem from="1472558726721" duration="113000" />
+      <workItem from="1472558871918" duration="1710000" />
+      <workItem from="1472561904049" duration="2352000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57266000" />
+    <option name="totallyTimeSpent" value="78311000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="52" y="52" width="1313" height="715" extended-state="0" />
+    <frame x="-1366" y="1560" width="1366" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24904798" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21888727" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -601,7 +702,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -637,95 +737,16 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Views/o/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Views/shared/guest/action-bar.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Views/o/test.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/scripts/app/extensions/showContent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="21" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Views/o/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="82" column="26" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Views/shared/guest/action-bar.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="55" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Views/o/test.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/scripts/app/extensions/showContent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="21" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/styles/global.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43710">
-          <caret line="2914" column="28" selection-start-line="2914" selection-start-column="28" selection-end-line="2914" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/styles/components.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1575">
-          <caret line="105" column="10" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/scripts/app/components.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -789,22 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Views/o/test.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -812,7 +817,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="21" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -820,31 +824,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Views/o/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3618">
-          <caret line="201" column="30" selection-start-line="201" selection-start-column="30" selection-end-line="201" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Views/shared/_layout.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/styles/components.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10278">
-          <caret line="571" column="16" selection-start-line="571" selection-start-column="9" selection-end-line="571" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -852,6 +831,111 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
           <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/styles/global.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Classes/Database/Query.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="39" column="2" selection-start-line="0" selection-start-column="0" selection-end-line="124" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Core/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="41" column="2" selection-start-line="0" selection-start-column="0" selection-end-line="135" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Core/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="64" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Core/View.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="46" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="189" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/UserModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Views/shared/_layout.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1638">
+          <caret line="91" column="27" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controllers/OController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/styles/global.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/styles/components.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/scripts/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="39" column="3" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -899,14 +983,14 @@
     <entry file="file://$PROJECT_DIR$/includes/scripts/app/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
-          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/scripts/app/layout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
+        <state relative-caret-position="288">
           <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
           <folding />
         </state>
@@ -920,10 +1004,138 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/styles/global.scss">
+    <entry file="file://$PROJECT_DIR$/app/Classes/Database/MySQL.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2862" column="21" selection-start-line="2862" selection-start-column="21" selection-end-line="2862" selection-end-column="21" />
+        <state relative-caret-position="1638">
+          <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Classes/Database/SQLSRV.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1710">
+          <caret line="127" column="7" selection-start-line="127" selection-start-column="7" selection-end-line="127" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Classes/Security/UniqueIdentifier.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Classes/HTML/Node.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Classes/HTML/Element.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Classes/Interfaces/INode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Classes/Interfaces/IPassword.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Classes/Interfaces/ISession.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Classes/Interfaces/IUID.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Classes/Interfaces/IUtility.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Classes/Security/Password.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Classes/Interfaces/IDatabase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Classes/Interfaces/IElement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Views/o/test.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Views/o/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="178" column="67" selection-start-line="178" selection-start-column="67" selection-end-line="178" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Classes/Helpers/Utility.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="54" column="7" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Classes/Security/Session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-828">
+          <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
           <folding />
         </state>
       </provider>

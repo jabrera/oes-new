@@ -67,3 +67,26 @@ define("PAGETITLE", "Oslo Framework");
  * Unique session prefix
  */
 define("SESSION_PREFIX", "oslo_");
+
+/**
+ * URL of the website
+ */
+define("SITE_URL", "");
+
+/**
+ * General Name of the website
+ */
+define("SITE_NAME", "");
+
+/**
+ * Image to be displayed when shared in social media
+ */
+define("SITE_IMG", "");
+
+/**
+ * Twitter account of the website
+ *
+ * Eg.
+ * @juvar_a
+ */
+define("SITE_TWITTER", "");

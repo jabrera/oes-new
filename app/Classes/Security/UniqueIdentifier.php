@@ -35,21 +35,25 @@
 
 namespace Oslo\Security;
 
+use Oslo\Interfaces as Interfaces;
+
 /**
  * Class UniqueIdentifier
  *
  * @package Oslo\Security
  */
-class UniqueIdentifier {
+class UniqueIdentifier implements Interfaces\IUID {
 	
 	/**
-	 * Generates 8 character random string
+	 * Generates n character random string
+     *
+     * n = 8 by default
 	 *
 	 * @return string
 	 */
-	public static function generate() {
+	public static function generate($length = 8) {
 		$chars = "abcdefghijklmnopqrstuvwxyz0123456789";
-		return substr(str_shuffle(str_repeat($chars, 8)), 0, 8);
+		return substr(str_shuffle(str_repeat($chars, $length)), 0, $length);
 	}
 
 }

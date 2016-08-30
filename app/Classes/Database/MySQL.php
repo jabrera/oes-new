@@ -35,6 +35,8 @@
 
 namespace Oslo\Database;
 
+use Oslo\Interfaces as Interfaces;
+
 /**
  * Uses mysql function for websites that uses MySQL
  * Uses Interface IDatabase. See interface for function documentation.
@@ -44,28 +46,47 @@ namespace Oslo\Database;
  * @package Oslo\Database
  *
  */
-class MySQL implements Oslo\Interfaces\IDatabase {
+class MySQL implements Interfaces\IDatabase {
 
-	/**
-	 * Instance of the connection of the database
-	 *
-	 * @var MySQL Link Identifier
-	 */
+    /**
+     * Instance of the connection of the database
+     *
+     * @var MySQL Link Identifier
+     */
 	protected $link;
 
+    /**
+     * Default values can be change in /library/config.php
+     *
+     * @param $host 		database host name
+     * @param $user			database username
+     * @param $pass			database password
+     * @param $database		database name
+     *
+     */
 	public function connect($host = DB_HOST, $user = DB_USER, $pass = DB_PASS, $database = DB_NAME) {
-        $this->link = mysql_connect($host, $user, $pass);
-        mysql_select_db($database);
+        $this->link = mysqli_connect($host, $user, $pass);
+        mysqli_select_db($database);
     }
 
+    /**
+     * This will fetch data from the query. If $singleRow
+     * is TRUE, only the first data will be taken.
+     *
+     * @param Query $query
+     * @param bool  $singleRow
+     *
+     * @return Query
+     *
+     */
 	public function read(Query $query, $singleRow = false) {
-        $q = mysql_query($query->get());
+        $q = mysqli_query($query->get());
         $result = array();
         $columns = array();
-        $numColumn = mysql_num_fields($q);
+        $numColumn = mysqli_num_fields($q);
         for($i = 0; $i < $numColumn; $i++)
-            $columns[] = mysql_field_name($q, $i);
-        while($row = mysql_fetch_array($q)) {
+            $columns[] = mysqli_field_name($q, $i);
+        while($row = mysqli_fetch_array($q)) {
             $tmp = array();
             foreach($columns as $column)
                 $tmp[$column] = $row[$column];
@@ -79,18 +100,35 @@ class MySQL implements Oslo\Interfaces\IDatabase {
         return $query;
     }
 
+    /**
+     * Executes the query from the object Query.
+     *
+     * @param Query $query
+     *
+     * @return Query
+     *
+     */
 	public function execute(Query $query) {
-        $query->setResult(mysql_query($query->get()));
+        $query->setResult(mysqli_query($query->get()));
         return $query;
     }
 
+    /**
+     * Frees resources from a query.
+     *
+     * @param $q
+     *
+     */
 	public function free_resources($q)
     {
 
     }
 
+    /**
+     *	Disconnects you to the current database connection
+     */
 	public function disconnect() {
-        mysql_close($this->link);
+        mysqli_close($this->link);
     }
 
 }

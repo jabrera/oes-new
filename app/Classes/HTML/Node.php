@@ -35,10 +35,27 @@
 
 namespace Oslo\HTML;
 
-class Node {
+use Oslo\Interfaces as Interfaces;
 
+/**
+ * Class Node
+ * @package Oslo\HTML
+ */
+class Node implements Interfaces\INode {
+
+    /**
+     * @var tags that do not use closing tags
+     */
     public static $selfClosingTags = array("area", "base", "br", "col", "command", "embed", "hr", "img", "input", "keygen", "link", "meta", "param", "source", "track", "wbr");
 
+    /**
+     * @param $code - element selector like in Emmet
+     * Period (.class) for classes
+     * Hash (#id) for ids
+     * Square brackets ([attribute=value])for attributes
+     *
+     * Prints out pure HTML code
+     */
     public static function create($code) {
         $el = new Element($code);
         echo $el->render();

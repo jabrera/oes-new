@@ -36,51 +36,15 @@
 namespace Oslo\Interfaces;
 
 interface IDatabase {
-	
-	/**
-	 * Default values can be change in /library/config.php
-	 *
-	 * @param $host 		database host name
-	 * @param $user			database username
-	 * @param $pass			database password
-	 * @param $database		database name
-	 *
-	 */
-    public function connect($host, $user, $pass, $database);
-	
-	/**
-	 * This will fetch data from the query. If $singleRow
-	 * is TRUE, only the first data will be taken.
-	 *
-	 * @param Query $query
-	 * @param bool  $singleRow
-	 *
-	 * @return Query
-	 *
-	 */
-    public function read(Query $query);
-	
-	/**
-	 * Executes the query from the object Query.
-	 *
-	 * @param Query $query
-	 *
-	 * @return Query
-	 *
-	 */
-    public function execute(Query $query);
-	
-	/**
-	 * Frees resources from a query.
-	 *
-	 * @param $q
-	 *
-	 */
-    public function free_resources($q);
-	
-	/**
-	 *	Disconnects you to the current database connection
-	 */
-    public function disconnect();
+
+    function connect($host, $user, $pass, $database);
+
+    function read(Query $query);
+
+    function execute(Query $query);
+
+    function free_resources($q);
+
+    function disconnect();
 
 }

@@ -36,6 +36,7 @@
 namespace Oslo\HTML;
 
 class Element {
+
     private $code, $tag, $attr, $text;
 	
     public function __construct($code) {
@@ -93,4 +94,5 @@ class Element {
             $html .= ">";
         return $html;
     }
+
 }
