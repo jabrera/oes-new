@@ -11,6 +11,7 @@
         load: function() {
             var self = this;
             this.content.data["_cl"] = this.content._cl;
+            alert(this.content.data);
             $.ajax({
                 type: this.content.type,
                 cache: this.content.cache,

@@ -94,6 +94,16 @@ class View {
         $this->_data["PageTitle"] = PAGETITLE;
     }
 
+    /**
+     * @param string $name
+     * @return mixed
+     */
+    public function get($name) {
+        if(isset($this->_data[$name]))
+            return $this->_data[$name];
+        return false;
+    }
+
 	/**
 	 * Sets data to be loaded to page
 	 *

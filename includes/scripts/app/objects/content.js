@@ -2,7 +2,7 @@ function Content() {
     this.id = 0;
     this.url = "";
     this.cache = true;
-    this.type = "get";
+    this.type = "post";
     this.data = {};
     this._cl = true;
 }
@@ -17,5 +17,8 @@ Content.prototype = {
             self.data[key] = value;
         })
         return this;
+    },
+    direct: function() {
+        this.data._direct = false;
     }
 }
