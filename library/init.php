@@ -53,7 +53,9 @@ function callHook() {
 			$action = $urlArray[0];
 	array_shift($urlArray);
 	$data = $urlArray;
+	$controller = strtolower($controller);
 	$controllerName = $controller;
+	$controller = checkShortcuts($controller);
 	$controller = ucwords($controller);
 	$model = rtrim($controller, "s");
 	$controller .= "Controller";
@@ -66,6 +68,14 @@ function callHook() {
 	else {
 		header("Location: ".ABSOLUTE_ROOT);
 	}
+}
+
+function checkShortcuts($original) {
+	$shortcuts = require_once("library".DS."controller_shortcuts.php");
+	if(isset($shortcuts[$original])) {
+		return $shortcuts[$original];
+	}
+	return $original;
 }
 
 function loadJavascript($path) {

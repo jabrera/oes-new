@@ -66,7 +66,7 @@ class View {
 	protected $_data = array();
 
 	/**
-	 * @var Oslo\Security\Session
+	 * @var Oslo\Security
 	 */
 	public $_session;
 
@@ -178,7 +178,6 @@ class View {
         $this->setDefaultComponentDirectory($userType);
         $this->getSliderMenu($userType);
         extract($this->_data);
-
         if(file_exists(ROOT.DS.'app'.DS.'Views'.DS.$this->_controller.DS.$this->_action.".phtml")) {
             ob_start();
             require_once(ROOT.DS.'app'.DS.'Views'.DS.$this->_controller.DS.$this->_action.".phtml");

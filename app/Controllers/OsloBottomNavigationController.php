@@ -27,28 +27,17 @@
  *
  * @project				Oslo Framework
  * @package				oslo-framework
- * @file				BNController.php
+ * @file				OsloBottomNavigationController.php
  * @author				Juvar Abrera <me@juvarabrera.com>
  * @copyright			2016 Juvar Abrera
- * @lastModified		9/1/16 12:28 PM
+ * @lastModified		9/1/16 1:12 PM
  */
 
-use Oslo\Core as Core;
+class OsloBottomNavigationController extends \Oslo\Core\Controller {
 
-class BNController extends Core\Controller {
+	public function __construct($controller, $action) {
+		parent::__construct($controller, $action);
+	}
 
-    public function __construct($controller, $action) {
-        parent::__construct($controller, $action);
-	    $this->cleanLayout();
-	    $this->shouldBeLoggedIn(false, ROOT.DS);
-    }
-
-    public function index() {
-    	//header("Location: ".ABSOLUTE_ROOT);
-    }
-
-    public function test() {
-		echo 'a';
-    }
 
 }

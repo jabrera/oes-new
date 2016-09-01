@@ -132,7 +132,7 @@ class Controller {
      */
     protected function checkDirectAccess() {
         if($this->_view->get("_direct") === false)
-            header("Location: /".PROJECT_CODE."/");
+            header("Location: ".ABSOLUTE_ROOT);
     }
 
 	/**
