@@ -35,13 +35,11 @@
 
 namespace Oslo\HTML;
 
-use Oslo\Interfaces as Interfaces;
-
 /**
  * Class Node
  * @package Oslo\HTML
  */
-class Node implements Interfaces\INode {
+class Node {
 
     /**
      * @var tags that do not use closing tags

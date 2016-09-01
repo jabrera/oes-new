@@ -35,14 +35,12 @@
 
 namespace Oslo\Security;
 
-use Oslo\Interfaces as Interfaces;
-
 /**
  * Class UniqueIdentifier
  *
  * @package Oslo\Security
  */
-class UniqueIdentifier implements Interfaces\IUID {
+class UniqueIdentifier {
 	
 	/**
 	 * Generates n character random string

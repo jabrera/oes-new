@@ -27,27 +27,28 @@
  *
  * @project				Oslo Framework
  * @package				oslo-framework
- * @file				IElement.php
+ * @file				BNController.php
  * @author				Juvar Abrera <me@juvarabrera.com>
  * @copyright			2016 Juvar Abrera
- * @lastModified		8/30/16 9:31 PM
+ * @lastModified		9/1/16 12:28 PM
  */
 
-namespace Oslo\Interfaces;
+use Oslo\Core as Core;
 
-interface IElement {
+class BNController extends Core\Controller {
 
-    function __construct($code);
+    public function __construct($controller, $action) {
+        parent::__construct($controller, $action);
+	    $this->cleanLayout();
+	    $this->shouldBeLoggedIn(false, ROOT.DS);
+    }
 
-    function getText();
+    public function index() {
+    	//header("Location: ".ABSOLUTE_ROOT);
+    }
 
-    function getAttributes();
+    public function test() {
+		echo 'a';
+    }
 
-    function getID();
-
-    function getClass();
-
-    function getTag();
-
-    function render();
 }

@@ -35,8 +35,6 @@
 
 namespace Oslo\Helpers;
 
-use Oslo\Interfaces as Interfaces;
-
 /**
  * Compilations of utility functions to
  * be used for the application
@@ -44,7 +42,7 @@ use Oslo\Interfaces as Interfaces;
  * Class Utility
  * @package Oslo\Helpers
  */
-class Utility implements Interfaces\IUtility {
+class Utility {
 
     /**
      * Removes tab into a single space

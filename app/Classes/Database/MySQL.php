@@ -35,8 +35,6 @@
 
 namespace Oslo\Database;
 
-use Oslo\Interfaces as Interfaces;
-
 /**
  * Uses mysql function for websites that uses MySQL
  * Uses Interface IDatabase. See interface for function documentation.
@@ -46,7 +44,7 @@ use Oslo\Interfaces as Interfaces;
  * @package Oslo\Database
  *
  */
-class MySQL implements Interfaces\IDatabase {
+class MySQL {
 
     /**
      * Instance of the connection of the database

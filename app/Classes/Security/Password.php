@@ -35,14 +35,12 @@
 
 namespace Oslo\Security;
 
-use Oslo\Interfaces as Interfaces;
-
 /**
  * Class Password
  *
  * @package Oslo\Security
  */
-class Password implements Interfaces\IPassword {
+class Password {
 
     /**
      * Simple password hasher

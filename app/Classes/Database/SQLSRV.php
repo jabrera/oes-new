@@ -35,8 +35,6 @@
 
 namespace Oslo\Database;
 
-use Oslo\Interfaces as Interfaces;
-
 /**
  * Uses sqlsrv functions for websites that uses SQL Server.
  * Uses Interface IDatabase. See interface for function documentation.
@@ -46,7 +44,7 @@ use Oslo\Interfaces as Interfaces;
  * @package Oslo\Database
  *
  */
-class SQLSRV implements Interfaces\IDatabase {
+class SQLSRV {
 
 	/**
 	 * Instance of the connection of the database

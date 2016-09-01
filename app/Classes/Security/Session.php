@@ -35,14 +35,12 @@
 
 namespace Oslo\Security;
 
-use Oslo\Interfaces as Interfaces;
-
 /**
  * Class Session
  *
  * @package Oslo\Security
  */
-class Session implements Interfaces\ISession {
+class Session {
 
 	/**
 	 * Holds ID of the logged user.
