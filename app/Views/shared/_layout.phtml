@@ -35,8 +35,9 @@ foreach($this->_cdir as $name => $component) {
 }
 ?>
 <div class="view scroll">
-    <?=$__BODY__?>
+    <?=$__RENDER__["BODY"]?>
 </div>
+<?=$__RENDER__["BOTTOM_NAVIGATION"]?>
 <div class="data action-bar ripple ripple-black">
     <div class="table">
         <div class="row">

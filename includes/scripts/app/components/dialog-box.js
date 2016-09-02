@@ -34,6 +34,7 @@ DialogBox = {
         var self = this;
         content.type = "post";
         content.data["_cl"] = content._cl;
+        content.data["_direct"] = true;
         $.ajax({
             type: content.type,
             cache: content.cache,

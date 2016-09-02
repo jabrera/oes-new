@@ -42,5 +42,5 @@
 
 return [
 	"o_bs" => "OsloBottomSheet",
-	"o_bn" => "OsloBottomNavigation"
+	"o_db" => "OsloDialogBox"
 ];

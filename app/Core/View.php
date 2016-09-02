@@ -181,18 +181,25 @@ class View {
         if(file_exists(ROOT.DS.'app'.DS.'Views'.DS.$this->_controller.DS.$this->_action.".phtml")) {
             ob_start();
             require_once(ROOT.DS.'app'.DS.'Views'.DS.$this->_controller.DS.$this->_action.".phtml");
-            $__BODY__ = ob_get_contents();
+            $__RENDER__["BODY"] = ob_get_contents();
             ob_end_clean();
-            $__BODY__ = Utility::removeTabs($__BODY__);
+	        $__RENDER__["BODY"] = Utility::removeTabs($__RENDER__["BODY"]);
+	        if(file_exists(ROOT.DS.'app'.DS.'Views'.DS.$this->_controller.DS.$this->_action."_bn.phtml")) {
+	        	ob_start();
+		        require_once(ROOT.DS.'app'.DS.'Views'.DS.$this->_controller.DS.$this->_action."_bn.phtml");
+		        $__RENDER__["BOTTOM_NAVIGATION"] = ob_get_contents();
+		        ob_end_clean();
+		        $__RENDER__["BOTTOM_NAVIGATION"] = Utility::removeTabs($__RENDER__["BOTTOM_NAVIGATION"]);
+	        }
             if($this->_layout != "") {
                 ob_start();
                 require_once(ROOT.DS.'app'.DS.'Views'.DS."shared".DS."_layout.phtml");
-                $__LAYOUT__ = ob_get_contents();
+	            $__RENDER__["LAYOUT"] = ob_get_contents();
                 ob_end_clean();
-                $__LAYOUT__ = Utility::removeTabs($__LAYOUT__);
-                echo $__LAYOUT__;
+	            $__RENDER__["LAYOUT"] = Utility::removeTabs($__RENDER__["LAYOUT"]);
+                echo $__RENDER__["LAYOUT"];
             } else
-                echo $__BODY__;
+                echo $__RENDER__["BODY"].$__RENDER__["BOTTOM_NAVIGATION"];
         } else
             require_once(ROOT.DS.'app'.DS.'Views'.DS."shared".DS."error.phtml");
     }

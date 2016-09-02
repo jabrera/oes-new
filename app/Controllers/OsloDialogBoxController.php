@@ -27,17 +27,22 @@
  *
  * @project				Oslo Framework
  * @package				oslo-framework
- * @file				OsloBottomNavigationController.php
+ * @file				OsloDialogBoxController.php
  * @author				Juvar Abrera <me@juvarabrera.com>
  * @copyright			2016 Juvar Abrera
- * @lastModified		9/1/16 1:12 PM
+ * @lastModified		9/2/16 9:13 AM
  */
 
-class OsloBottomNavigationController extends \Oslo\Core\Controller {
+class OsloDialogBoxController extends \Oslo\Core\Controller {
 
 	public function __construct($controller, $action) {
 		parent::__construct($controller, $action);
+		$this->cleanLayout();
+		$this->checkDirectAccess();
 	}
 
+	public function index() {
+
+	}
 
 }

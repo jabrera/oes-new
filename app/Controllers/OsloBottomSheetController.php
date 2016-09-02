@@ -42,7 +42,7 @@ class OsloBottomSheetController extends \Oslo\Core\Controller {
     }
 
     public function index() {
-    	//header("Location: ".ABSOLUTE_ROOT);
+
     }
 
     public function test() {
