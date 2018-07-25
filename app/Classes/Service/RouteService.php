@@ -27,21 +27,14 @@
  *
  * @project				Oslo Framework
  * @package				oslo-framework
- * @file				OsloDialogBoxController.php
+ * @file				RouteService.php
  * @author				Juvar Abrera <me@juvarabrera.com>
  * @copyright			2016 Juvar Abrera
- * @lastModified		9/2/16 9:13 AM
+ * @lastModified		9/2/16 9:39 PM
  */
 
-class OsloDialogBoxController extends \Oslo\Core\Controller {
+namespace Oslo\Service;
 
-	public function __construct($controller, $action) {
-		parent::__construct($controller, $action);
-		$this->cleanLayout();
-		$this->checkDirectAccess();
-	}
-
-	public function index() {
-	}
+class RouteService {
 
 }

@@ -40,15 +40,22 @@ class OController extends \Oslo\Core\Controller {
 	}
 
 	public function index() {
-		
+		header("Location: ".ABSOLUTE_ROOT."o/login");
+	}
+
+	public function login() {
+		$this->setPageTitle("Login");
+		//$this->shouldBeLoggedIn(false, ROOT.DS);
+	}
+
+	public function register() {
+		$this->setPageTitle("Register");
 	}
 
 	public function test() {
 	    $this->checkDirectAccess();
 		$this->shouldBeLoggedIn(false, ROOT.DS);
 		$this->cleanLayout();
-//        if(isset($_POST['direct']))
-//            echo 'a';
 	}
 
 }

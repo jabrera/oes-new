@@ -3,11 +3,11 @@ function Share() {
 	this.social = [
 		{
 			name: "facebook",
-			action: '<li><a id="shareFacebook"><img src="includes/images/resources/facebook.png"><span>Facebook</span></a></li>'
+			action: '<li><a id="shareFacebook"><img src="'+Config.ROOT+'/includes/images/resources/facebook.png"><span>Facebook</span></a></li>'
 		},
 		{
 			name: "twitter",
-			action: '<li><a id="shareTwitter"><img src="includes/images/resources/twitter.png"><span>Twitter</span></a></li>'
+			action: '<li><a id="shareTwitter"><img src="'+Config.ROOT+'/includes/images/resources/twitter.png"><span>Twitter</span></a></li>'
 		},
 		{
 			name: "url",

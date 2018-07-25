@@ -1,5 +1,5 @@
 <?php
-define("PROJECT_CODE", "oslo-framework");
+define("PROJECT_CODE", "oes-new");
 define("DS", DIRECTORY_SEPARATOR);
 define("ROOT", dirname(__FILE__));
 if(strpos($_SERVER["HTTP_HOST"], "localhost") !== false)

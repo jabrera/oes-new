@@ -33,14 +33,14 @@
  * @lastModified		5/6/16 11:20 AM
  */
 
-namespace Oslo\Helpers;
+namespace Oslo\Helper;
 
 /**
  * Compilations of utility functions to
  * be used for the application
  *
  * Class Utility
- * @package Oslo\Helpers
+ * @package Oslo\Helper
  */
 class Utility {
 
@@ -52,6 +52,6 @@ class Utility {
      * @return string
      */
 	public static function removeTabs($str) {
-		return trim(preg_replace("/\n| +/", " ", $str));
+		return trim(preg_replace("/\n| +/", " ", preg_replace('/[ ]{2,}|[\t]/', '', $str)));
 	}
 }

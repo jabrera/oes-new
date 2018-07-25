@@ -65,9 +65,8 @@ function callHook() {
 		if((int)method_exists($controller, $action))
 			call_user_func_array(array($dispatch,$action), $data);
 	}
-	else {
+	else
 		header("Location: ".ABSOLUTE_ROOT);
-	}
 }
 
 function checkShortcuts($original) {

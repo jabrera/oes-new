@@ -109,6 +109,10 @@ class Controller {
 		$this->_view->set($name, $value);
 	}
 
+	public function setPageTitle($name) {
+		$this->set("PageTitle", $name);
+	}
+
 	/**
 	 * Sets data in array to be loaded to page
 	 *

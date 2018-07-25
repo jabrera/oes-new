@@ -12,7 +12,7 @@
             use Oslo\HTML as HTML;
             foreach($slider_menu as $menu) {
                 if(is_array($menu)) {
-                    if(is_array($menu["link"])) {
+                    if(is_array($menu["link"]) && !empty($menu["link"])) {
                         echo '<li><a><i class="md-icon">'.$menu["icon"].'</i>'.$menu["text"].'</a><ul>';
                         foreach($menu["link"] as $submenu)
                             echo '<li><a href="'.$submenu["link"].'">'.$menu["text"].'</a></li>';
@@ -27,7 +27,7 @@
             ?>
         </ul>
         <div class="copy">
-            &copy; <?=date("Y")?> Oslo  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, laborum.
+            &copy; <?=COPYRIGHT?>
         </div>
     </div>
 </div>

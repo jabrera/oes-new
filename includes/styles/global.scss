@@ -1,8 +1,10 @@
 //@extend-elements
 //original selectors
 //input[type="text"], input[type="password"], input[type="date"], input[type="time"], select, textarea
-$primary: #005cb9;
-$primary_light: #b2ceea;
+$primary: #005CB9;
+$primary_light: #62A0E0;
+$secondary: #FFBB12;
+$secondary_light: #FFD56C;
 
 @mixin box-shadow($value) {
 	-webkit-box-shadow: $value;
@@ -99,13 +101,13 @@ a {
 		text-align: center;
 	}
 	&.flat_button[onclick] {
-		color: #005cb9;
+		color: $secondary;
 	}
 	&.flat_button[href] {
-		color: #005cb9;
+		color: $secondary;
 	}
 	&.flat_button[id] {
-		color: #005cb9;
+		color: $secondary;
 	}
 	&.raised_button {
 		background: rgba(0,0,0,.12);
@@ -125,15 +127,15 @@ a {
 		font-size: 14px;
 	}
 	&.raised_button[onclick] {
-		background: #005cb9;
+		background: $secondary;
 		color: white;
 	}
 	&.raised_button[href] {
-		background: #005cb9;
+		background: $secondary;
 		color: white;
 	}
 	&.raised_button[id] {
-		background: #005cb9;
+		background: $secondary;
 		color: white;
 	}
 }
@@ -2890,12 +2892,12 @@ a {
 	background: rgba(0,0,0,.3);
 }
 ul {
+	padding: 0;
+	margin: 0;
+	margin-top: 8px;
+	list-style-type: none;
 	&.grid-options {
 		overflow: hidden;
-		margin: 0;
-		padding: 0;
-		margin-top: 8px;
-		list-style-type: none;
 		li {
 			width: 33.33%;
 			float: left;
@@ -2954,10 +2956,6 @@ ul {
 		}
 	}
 	&.list {
-		padding: 0;
-		margin: 0;
-		margin-top: 8px;
-		list-style-type: none;
 		li {
 			display: block;
 			width: 100%;
@@ -3105,14 +3103,14 @@ label {
 				top: -3px;
 				left: -2px;
 				margin: 0;
-				background: #005cb9;
+				background: $secondary;
 				color: white;
 				display: none;
 			}
 		}
 		&:checked + span {
-			border: 2px solid #005cb9;
-			background-color: #005cb9;
+			border: 2px solid $secondary;
+			background-color: $secondary;
 			i.md-icon {
 				display: block;
 			}
@@ -3147,10 +3145,10 @@ label {
 				}
 			}
 			&:checked + span {
-				background-color: $primary_light;
+				background-color: $secondary_light;
 			}
 			&:checked + span i {
-				background-color: $primary;
+				background-color: $secondary;
 				left: 20px;
 			}
 		}
@@ -3168,7 +3166,7 @@ label {
 		}
 		&:checked + i.md-icon {
 			opacity: 1;
-			color: $primary;
+			color: $secondary;
 			&:before {
 				content: "radio_button_checked";
 			}
@@ -3342,7 +3340,7 @@ table.data {
 	height: 3px;
 	display: block;
 	width: 100%;
-	background-color: $primary_light;
+	background-color: $secondary_light;
 	border-radius: 2px;
 	background-clip: padding-box;
 	overflow: hidden;
@@ -3351,11 +3349,11 @@ table.data {
 		background-color: inherit;
 		top: 0;
 		bottom: 0;
-		background-color: $primary;
+		background-color: $secondary;
 		transition: width .3s linear;
 	}
 	.indeterminate {
-		background-color: $primary;
+		background-color: $secondary;
 		&:before {
 			content: '';
 			position: absolute;

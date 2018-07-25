@@ -2,6 +2,7 @@
 //original selectors
 //.view h1, .view h2, .view h3, .view h4, .view h5, .view h6
 $primary: #005cb9;
+$secondary: #ffbb12;
 
 @mixin box-shadow($value) {
 	-webkit-box-shadow: $value;
@@ -291,8 +292,7 @@ $primary: #005cb9;
 		@extend %header;
 	}
 	.columns {
-		max-width: 1024px;
-		margin: 0 auto;
+		width: 100%;
 		position: relative;
 		overflow: hidden;
 		padding-bottom: 24px;
@@ -307,6 +307,12 @@ $primary: #005cb9;
 			&:last-child {
 				padding-right: 24px;
 			}
+		}
+		.wrapper {
+			margin: 0 auto;
+			position: relative;
+			overflow: hidden;
+			max-width: 1024px;
 		}
 		.bg {
 			position: absolute;
@@ -328,6 +334,9 @@ $primary: #005cb9;
 		}
 		&.primary {
 			background-color: $primary;
+		}
+		&.secondary {
+			background-color: $secondary;
 		}
 		.wrapper {
 			max-width: 1024px;
@@ -368,6 +377,9 @@ $primary: #005cb9;
 	}
 	.buttons {
 		padding: 0 16px 16px;
+	}
+	.wrapper {
+		padding: 8px 16px;
 	}
 	.data-action-card {
 		background: $primary;
@@ -472,7 +484,7 @@ $primary: #005cb9;
 				}
 			}
 			a[selected] {
-				color: $primary;
+				color: $secondary;
 			}
 		}
 	}

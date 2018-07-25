@@ -66,7 +66,7 @@ define("PAGETITLE", "Oslo Framework");
 /**
  * Unique session prefix
  */
-define("SESSION_PREFIX", "oslo_");
+define("SESSION_PREFIX", "oes_");
 
 /**
  * URL of the website
@@ -76,7 +76,7 @@ define("SITE_URL", "");
 /**
  * General Name of the website
  */
-define("SITE_NAME", "");
+define("SITE_NAME", "Online Enrollment System DLSUD");
 
 /**
  * Image to be displayed when shared in social media
@@ -90,3 +90,5 @@ define("SITE_IMG", "");
  * @juvar_a
  */
 define("SITE_TWITTER", "");
+
+define("COPYRIGHT", "&copy ".date("Y")." Online Enrolment System DLSUD - Oslo Framework");

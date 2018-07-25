@@ -13,7 +13,7 @@ App = {
         App.afterLoad();
     },
     log: function(msg) {
-        if(development == 1)
+        if(Config.development == 1)
             console.log(msg);
     },
     afterLoad: function() {

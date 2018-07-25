@@ -229,8 +229,7 @@
   .view > .card {
     margin: 0px; }
   .view .columns {
-    max-width: 1024px;
-    margin: 0 auto;
+    width: 100%;
     position: relative;
     overflow: hidden;
     padding-bottom: 24px; }
@@ -243,6 +242,11 @@
       padding-right: 0; }
       .view .columns.pad [class^="col-"]:last-child {
         padding-right: 24px; }
+    .view .columns .wrapper {
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+      max-width: 1024px; }
     .view .columns .bg {
       position: absolute;
       top: 0px;
@@ -259,6 +263,8 @@
       margin-top: 8px; }
     .view > .cover.primary {
       background-color: #005cb9; }
+    .view > .cover.secondary {
+      background-color: #ffbb12; }
     .view > .cover .wrapper {
       max-width: 1024px;
       width: 1024px;
@@ -299,6 +305,8 @@
     margin: 0; }
   .card .buttons {
     padding: 0 16px 16px; }
+  .card .wrapper {
+    padding: 8px 16px; }
   .card .data-action-card {
     background: #005cb9;
     display: table;
@@ -403,7 +411,7 @@
           display: block;
           font-size: 14px; }
       .bottom-navigation ul li a[selected] {
-        color: #005cb9; }
+        color: #ffbb12; }
   .bottom-navigation.side {
     width: 60px !important; }
     .bottom-navigation.side span {

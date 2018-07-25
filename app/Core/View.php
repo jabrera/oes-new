@@ -35,7 +35,7 @@
 
 namespace Oslo\Core;
 
-use Oslo\Helpers\Utility;
+use Oslo\Helper\Utility;
 
 /**
  * Class View
@@ -66,7 +66,7 @@ class View {
 	protected $_data = array();
 
 	/**
-	 * @var Oslo\Security
+	 * @var Oslo\Security\Session
 	 */
 	public $_session;
 
@@ -152,20 +152,16 @@ class View {
 	private function getSliderMenu($userType) {
         if($userType == "guest") {
             $this->_data["slider_menu"] = array(
-                array(
-                    "link" => array(
-                        array(
-                            "link" => "#",
-                            "text" => "hello"
-                        ),
-                        array(
-                            "link" => "#",
-                            "text" => "hello"
-                        )
-                    ),
-                    "icon" => "face",
-                    "text" => "Hello"
-                )
+	            array(
+		            "link" => ABSOLUTE_ROOT."o/login",
+		            "icon" => "lock",
+		            "text" => "Login"
+	            ),
+	            array(
+		            "link" => ABSOLUTE_ROOT."o/register",
+		            "icon" => "account_circle",
+		            "text" => "Register"
+	            )
             );
         }
     }
@@ -190,7 +186,8 @@ class View {
 		        $__RENDER__["BOTTOM_NAVIGATION"] = ob_get_contents();
 		        ob_end_clean();
 		        $__RENDER__["BOTTOM_NAVIGATION"] = Utility::removeTabs($__RENDER__["BOTTOM_NAVIGATION"]);
-	        }
+	        } else
+	        	$__RENDER__["BOTTOM_NAVIGATION"] = "";
             if($this->_layout != "") {
                 ob_start();
                 require_once(ROOT.DS.'app'.DS.'Views'.DS."shared".DS."_layout.phtml");

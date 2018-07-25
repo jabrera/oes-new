@@ -51,11 +51,11 @@ a {
     vertical-align: middle;
     text-align: center; }
   a.flat_button[onclick] {
-    color: #005cb9; }
+    color: #FFBB12; }
   a.flat_button[href] {
-    color: #005cb9; }
+    color: #FFBB12; }
   a.flat_button[id] {
-    color: #005cb9; }
+    color: #FFBB12; }
   a.raised_button {
     background: rgba(0, 0, 0, 0.12);
     font-weight: bold;
@@ -81,13 +81,13 @@ a {
     padding: 0 8px;
     font-size: 14px; }
   a.raised_button[onclick] {
-    background: #005cb9;
+    background: #FFBB12;
     color: white; }
   a.raised_button[href] {
-    background: #005cb9;
+    background: #FFBB12;
     color: white; }
   a.raised_button[id] {
-    background: #005cb9;
+    background: #FFBB12;
     color: white; }
 
 .notransition {
@@ -2150,57 +2150,53 @@ a {
   left: 0;
   background: rgba(0, 0, 0, 0.3); }
 
-ul.grid-options {
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  margin-top: 8px;
-  list-style-type: none; }
-  ul.grid-options li {
-    width: 33.33%;
-    float: left;
-    text-align: center;
-    display: table; }
-    ul.grid-options li a {
-      padding: 10px 0;
-      display: table-cell;
-      color: rgba(0, 0, 0, 0.54); }
-    ul.grid-options li span {
-      display: block;
-      font-size: 12px; }
-    ul.grid-options li img {
-      margin-bottom: 8px;
-      width: 48px; }
-    ul.grid-options li i.md-icon {
-      margin-bottom: 8px;
-      font-size: 48px !important; }
-  ul.grid-options.tiles li {
-    padding: 4px; }
-  ul.grid-options.grid-1 li {
-    width: 100% !important; }
-  ul.grid-options.grid-2 li {
-    width: 50%; }
-  ul.grid-options.grid-3 li {
-    width: 33.3333%; }
-  ul.grid-options.grid-4 li {
-    width: 25%; }
-  ul.grid-options.grid-5 li {
-    width: 20%; }
-  ul.grid-options.grid-6 li {
-    width: 16.6667%; }
-  ul.grid-options.grid-7 li {
-    width: 14.2857%; }
-  ul.grid-options.grid-8 li {
-    width: 12.5%; }
-  ul.grid-options.grid-9 li {
-    width: 11.11%; }
-  ul.grid-options.grid-10 li {
-    width: 10%; }
-ul.list {
+ul {
   padding: 0;
   margin: 0;
   margin-top: 8px;
   list-style-type: none; }
+  ul.grid-options {
+    overflow: hidden; }
+    ul.grid-options li {
+      width: 33.33%;
+      float: left;
+      text-align: center;
+      display: table; }
+      ul.grid-options li a {
+        padding: 10px 0;
+        display: table-cell;
+        color: rgba(0, 0, 0, 0.54); }
+      ul.grid-options li span {
+        display: block;
+        font-size: 12px; }
+      ul.grid-options li img {
+        margin-bottom: 8px;
+        width: 48px; }
+      ul.grid-options li i.md-icon {
+        margin-bottom: 8px;
+        font-size: 48px !important; }
+    ul.grid-options.tiles li {
+      padding: 4px; }
+    ul.grid-options.grid-1 li {
+      width: 100% !important; }
+    ul.grid-options.grid-2 li {
+      width: 50%; }
+    ul.grid-options.grid-3 li {
+      width: 33.3333%; }
+    ul.grid-options.grid-4 li {
+      width: 25%; }
+    ul.grid-options.grid-5 li {
+      width: 20%; }
+    ul.grid-options.grid-6 li {
+      width: 16.6667%; }
+    ul.grid-options.grid-7 li {
+      width: 14.2857%; }
+    ul.grid-options.grid-8 li {
+      width: 12.5%; }
+    ul.grid-options.grid-9 li {
+      width: 11.11%; }
+    ul.grid-options.grid-10 li {
+      width: 10%; }
   ul.list li {
     display: block;
     width: 100%;
@@ -2250,36 +2246,36 @@ ul.list {
   ul.list.small i.md-icon {
     font-size: 24px !important;
     margin-right: 12px; }
-ul.buttons {
-  list-style-type: none;
-  margin: 0;
-  padding: 0; }
-  ul.buttons.right {
-    text-align: right;
-    list-style-position: inside; }
-    ul.buttons.right li {
-      margin-left: 8px;
-      margin-right: 0; }
-  ul.buttons li {
-    display: inline-block;
-    margin-right: 4px;
-    background-position: 100% 0;
-    padding-right: 0; }
-  ul.buttons.stacked li {
-    display: block;
-    margin: 0; }
-    ul.buttons.stacked li a {
-      text-align: left;
-      -webkit-border-radius: 0;
-      -moz-border-radius: 0;
-      -ms-border-radius: 0;
-      -o-border-radius: 0;
-      border-radius: 0;
-      height: 48px;
-      padding-left: 24px;
-      padding-right: 16px; }
-  ul.buttons.stacked.right li a {
-    text-align: right; }
+  ul.buttons {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    ul.buttons.right {
+      text-align: right;
+      list-style-position: inside; }
+      ul.buttons.right li {
+        margin-left: 8px;
+        margin-right: 0; }
+    ul.buttons li {
+      display: inline-block;
+      margin-right: 4px;
+      background-position: 100% 0;
+      padding-right: 0; }
+    ul.buttons.stacked li {
+      display: block;
+      margin: 0; }
+      ul.buttons.stacked li a {
+        text-align: left;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0;
+        height: 48px;
+        padding-left: 24px;
+        padding-right: 16px; }
+    ul.buttons.stacked.right li a {
+      text-align: right; }
 
 .action {
   padding: 8px; }
@@ -2337,12 +2333,12 @@ label {
       top: -3px;
       left: -2px;
       margin: 0;
-      background: #005cb9;
+      background: #FFBB12;
       color: white;
       display: none; }
   label:not(.switch) input[type="checkbox"]:checked + span {
-    border: 2px solid #005cb9;
-    background-color: #005cb9; }
+    border: 2px solid #FFBB12;
+    background-color: #FFBB12; }
     label:not(.switch) input[type="checkbox"]:checked + span i.md-icon {
       display: block; }
   label.switch {
@@ -2375,9 +2371,9 @@ label {
         -o-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out; }
     label.switch input[type="checkbox"]:checked + span {
-      background-color: #b2ceea; }
+      background-color: #FFD56C; }
     label.switch input[type="checkbox"]:checked + span i {
-      background-color: #005cb9;
+      background-color: #FFBB12;
       left: 20px; }
   label:not(.switch) input[type="radio"] + .md-icon {
     font-size: 22px !important;
@@ -2389,7 +2385,7 @@ label {
       content: "radio_button_unchecked"; }
   label:not(.switch) input[type="radio"]:checked + i.md-icon {
     opacity: 1;
-    color: #005cb9; }
+    color: #FFBB12; }
     label:not(.switch) input[type="radio"]:checked + i.md-icon:before {
       content: "radio_button_checked"; }
 
@@ -2519,7 +2515,7 @@ table.data {
   height: 3px;
   display: block;
   width: 100%;
-  background-color: #b2ceea;
+  background-color: #FFD56C;
   border-radius: 2px;
   background-clip: padding-box;
   overflow: hidden; }
@@ -2528,10 +2524,10 @@ table.data {
     background-color: inherit;
     top: 0;
     bottom: 0;
-    background-color: #005cb9;
+    background-color: #FFBB12;
     transition: width .3s linear; }
   .progress .indeterminate {
-    background-color: #005cb9; }
+    background-color: #FFBB12; }
     .progress .indeterminate:before {
       content: '';
       position: absolute;

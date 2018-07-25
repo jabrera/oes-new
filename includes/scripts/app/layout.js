@@ -2,16 +2,16 @@ Layout = {
     ready: function() {
         this.execute();
         $(window).resize(function() {
+            Layout.execute();
             ActionBar.fitCell();
             ActionBar.responsiveTitle();
-            Layout.execute();
         })
         App.log("\tLayout initialized.");
     },
     execute: function() {
         if(App.width() > 1024) {
             BottomNavigation.sideLayout();
-            if(fixedSlider)
+            if(Config.fixedSlider)
                 Layout.fixedSliderLayout();
             else
                 Layout.hideSliderLayout();

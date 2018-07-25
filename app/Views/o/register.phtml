@@ -1,0 +1,35 @@
+<div class="columns pad">
+	<div class="bg"></div>
+	<div class="wrapper">
+		<div class="col-8 offset-2">
+			<div class="card">
+				<h2>Register</h2>
+				<p>Fill up the form properly</p>
+				<div class="wrapper">
+					<label><span>Enrolling for Grade Level</span><select name="gl">
+							<option value="0">Select Grade Level</option>
+							<option value="7">Grade 7</option>
+							<option value="8">Grade 8</option>
+							<option value="9">Grade 9</option>
+							<option value="10">Grade 10</option>
+						</select></label>
+					<div id="form">
+a
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	$(document).ready(function() {
+		$("select[name=gl]").change(function() {
+			$value = $(this).value;
+			alert($value);
+			if($value != 0)
+				$("#form").show();
+			else
+				$("#form").hide();
+		})
+	})
+</script>

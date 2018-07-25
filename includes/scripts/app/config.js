@@ -1,2 +1,5 @@
-var development = true;
-var fixedSlider = true;
+var Config = {
+	development: true,
+	fixedSlider: true,
+	ROOT: "/oes-new"
+}
